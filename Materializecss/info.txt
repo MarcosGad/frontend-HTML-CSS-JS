@@ -1,0 +1,70 @@
+жеж »н∆… Џгб гЋб «б»ж  «” —» жбяд  ќ бЁ «де  Џ гѕ Џбн гж«ѕ «б ’гнг жен «н÷« —”»жд”Ё бя«Ё… «б‘«‘« 
+гд‘∆ »ж«”Ў… ћжћб 
+http://materializecss.com/
+
+«бћ—нѕ ”н” г 
+http://materializecss.com/grid.html
+
+
+<div class="row">
+            <div class="col l6">
+                <p>Hello from hello from</p>
+            </div>  
+            <div class="col l6">
+               <p>Hello from hello from</p>
+            </div>
+ </div>
+ед« гЋ«б »”нЎ дќбн 2 ѕ«Ё няжде ћд» »Џ÷ Ён «б‘«‘«  «бб—ћ яб ж«Ќѕ жќѕ 6 ж 6+6 »н”«жн 12 Џѕѕ «б«Џгѕ жбж Џ«н“д «бѕЁ няжд бжЌѕе дѕнбе 12 
+  <div class="row">
+            <div class="col l12">
+                <p>Hello from hello from</p>
+            </div>  
+            <div class="col l6">
+               <p>Hello from hello from</p>
+            </div>
+   </div>
+
+
+
+
+ед« Ён «бгЋ«б ќбн  Ён «б‘«‘… «бя»н—… «бѕЁ«д ћд» »Џ÷ яб ж«Ќѕ 6 ж«н÷« ќбн  Ён «б‘«‘… «бгѕнг «бѕЁ «б«жб бжЌѕе ж«ќѕ 12 Џгжѕ 
+ <div class="row">
+            <div class="col m12 l6">
+                <p>Hello from hello from</p>
+            </div>  
+            <div class="col l6">
+               <p>Hello from hello from</p>
+            </div>
+ </div>
+
+
+
+жед« ћЏбд« «б‘«‘… «б’џн— «б«”гжб «д «бѕЁ «б«жб няжд ж«Ќѕ «ѕн е «б 12 Џгжѕ 
+ <div class="row">
+            <div class="col s12 m12 l6">
+                <p>Hello from hello from</p>
+            </div>  
+            <div class="col l6">
+               <p>Hello from hello from</p>
+            </div>
+ </div>
+
+
+
+
+ед« д ябг Џд «бяжд д—н жеж «дя » яжд г ж”Ў Ён «б’ЁЌ… Џбн ‘г«бя г”«Ё… жЏбн нгндя г”«Ё… 
+
+<body>
+      <div class="container">
+        <!-- Page Content goes here -->
+      </div>
+</body>
+
+
+
+жед« «бяжд —н «бЏ«ѕн жеж »нгбн «б’ЁЌ… ябе 
+
+  <div class="container-fluid">
+       
+  </div>
+

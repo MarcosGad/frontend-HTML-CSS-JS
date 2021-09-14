@@ -1,0 +1,21 @@
+img {
+    border-radius: 50%; 
+    margin: 50px; 
+    padding: 3px; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    transition:all .5s ease-in-out 
+}
+
+img:hover {
+     box-shadow: 7px 7px 20px #e4e4e4,
+               -7px -7px 20px #e4e4e4;
+}
+
+/*img:hover {
+   
+    border-radius: 50%; /* lo ho morb3a w 3eza t7ola la da2ra 
+}*/
+
+
+

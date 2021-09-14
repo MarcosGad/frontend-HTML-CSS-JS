@@ -1,0 +1,2 @@
+https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_focus_blur
+https://www.w3schools.com/jquery/event_blur.asp

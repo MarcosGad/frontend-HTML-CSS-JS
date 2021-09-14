@@ -1,0 +1,21 @@
+/* 3- use flexbox */ 
+
+div {
+    
+    width: 60%; 
+    height: 200px; 
+    background-color: #000; 
+    color: #fff;
+    display: flex; 
+    justify-content: center; /* horizontal */      /* bykona al 3ksa lo al  flex-direction: column; */
+    align-items: center; /* vertiacl */
+}
+
+p {
+   
+    width: 250px;
+    height: 50px; 
+    padding: 10px; 
+    background-color: #00f;
+}
+  

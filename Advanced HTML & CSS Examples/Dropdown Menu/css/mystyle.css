@@ -1,0 +1,52 @@
+ul {
+    
+    list-style: none; 
+    width: 600px; 
+    margin: auto; 
+}
+
+ul li {
+    
+    position: relative; 
+    float: left; 
+    width: 120px; 
+    background-color: #f00;
+    text-align: center; 
+    height: 40px; 
+    line-height: 40px; 
+    box-shadow: 2px 3px 4px #000; 
+}
+
+ul li a {
+    
+    color: #fff; 
+    text-decoration: none; 
+    display: block; 
+    
+}
+
+ul li a:hover {
+    
+    background: #333; 
+    color: #f50; 
+}
+
+ul ul {
+    
+    margin: 0; 
+    padding: 0; 
+    width: 120px; 
+    display: none; 
+}
+
+ul li:hover > ul {
+    
+    display: block; 
+}
+
+ul ul ul {
+    
+    margin-left: 120px;
+    position: absolute; 
+    top: 0; 
+}

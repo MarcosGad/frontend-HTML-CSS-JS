@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+      <div id="elzero-app" class="container">
+        <form action="send.html" method="POST" @submit="validateForm">
+           <div class="errors-list">
+             <div class="error" v-for="error in formErrors">
+                {{ error }}
+             </div>
+           </div>
+           <div class="form-group">
+              <label for="">Username</label>
+              <input type="text" name="username" class="form-input" v-model="username" />
+           </div>
+           <div class="form-group">
+            <label for="">Subject</label>
+            <input type="text" name="subject" class="form-input" v-model="subject" />
+           </div>
+           <div class="form-group">
+            <label for="">Message</label>
+            <textarea name="message" class="form-input" v-model="message"></textarea>
+           </div>
+
+           <div class="form-group">
+             <input type="submit" class="sent-button" value="Send">
+           </div>
+         
+           
+        </form>
+      </div>
+      <script src="js/vue.js"></script>
+      <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+              formErrors: [],
+              username: null,
+              subject: null,
+              message: null,
+              maxChars: 10
+            },
+            methods: {
+              validateForm: function (e) {
+                this.formErrors = []; //Empty Errors To Start Fresh
+                // [1] Check if Username is empty
+                if(!this.username){
+                  this.formErrors.push('username cant be empty');
+                }
+                // [2] Check if subject is empty
+                if(!this.subject){
+                  this.formErrors.push('subject cant be empty');
+                }
+                // [3] Check if message is empty
+                if(!this.message){
+                  this.formErrors.push('message cant be empty');
+                }
+                // [4] Check username characters count 
+                if(this.username && this.username.length > this.maxChars){
+                  //this.formErrors.push('username cant be more than ' + this.maxChars +' characters');
+                  this.formErrors.push(`username cant be more than ${this.maxChars} characters`);
+                }
+
+                // if no errors return true
+                if(!this.formErrors.length){
+                  return true; 
+                }
+
+                e.preventDefault();
+
+              }
+            }
+        }); 
+      </script>
+  </body>
+</html>

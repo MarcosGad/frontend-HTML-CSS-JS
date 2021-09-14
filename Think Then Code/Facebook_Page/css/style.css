@@ -1,0 +1,174 @@
+*{
+    
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+}
+
+.container {
+    
+    width: 1200px; 
+    margin: auto; 
+}
+
+.header {
+    
+    background-color: #3b5998; 
+    width: 100%; 
+    height: 85px; 
+}
+
+.logo {
+    
+    width: 50%;
+    float: left; 
+}
+
+h2{
+    
+    color: #fff; 
+    padding: 30px; 
+    font-size: 35px; 
+}
+
+.login {
+    
+    width: 50%; 
+    float: right; 
+    color: #fff; 
+    padding-top: 25px; 
+}
+
+.user {
+    
+    float: left; 
+    padding-right: 15px; 
+}
+
+label {
+    font-size: 13px; 
+    
+}
+
+a{
+    font-size: 10px; 
+    color: #fff; 
+}
+input[type="submit"] {
+    
+    width: 40px; 
+    height: 15px; 
+    border: 0;
+    margin-top: 20px; 
+    background-color: #3b5998;  
+    color: #fff; 
+    cursor: pointer; 
+}
+
+/* content */ 
+
+.content {
+    
+    width: 100%; 
+    background: -webkit-linear-gradient(bottom,#ddd,#fff); 
+    height: 671px;
+}
+
+.img {
+    
+    width: 50%; 
+    float: left; 
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+.form {
+    
+    width: 50%; 
+    float: right; 
+}
+
+.content p {
+    margin-top: 15px; 
+    font-size: 25px; 
+    color:  #3b5998;  
+}
+
+ .content span {
+    
+    display: block; 
+    font-size: 18px; 
+    margin-top: 15px;
+    
+}
+
+.content h2 {
+    
+    color: #000;
+    padding: 0; 
+    padding-top: 25px; 
+}
+
+.content span {
+    
+    font-weight: bold; 
+}
+
+.form .inp {
+    
+    height: 5px; 
+    padding: 13px 0 13px 0;
+    font-size: 18px;
+    width: 200px;
+    margin-right: 10px;
+    outline: 0; 
+    border-radius: 5px; 
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+} 
+
+.form .in {
+    
+    display: block; 
+    width: 80%;
+    height: 5px; 
+    padding: 13px 0 13px 0;
+    font-size: 18px;
+    margin-right: 10px;
+    outline: 0; 
+    border-radius: 5px; 
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+.form a{
+    color: #00f;
+    font-size: 14px;
+}
+
+.form label {
+    
+    margin-bottom: 6px;
+    display: block; 
+    font-size: 15px;
+}
+
+.form span.text {
+    
+    font-size: 12px;
+    color: #aaa;
+}
+
+.form input[type="submit"] {
+    
+    width: 200px;
+    height: 40px;
+    background-color: #619e4e; 
+    color: #fff;
+    border-radius: 3px; 
+    font-weight: bold; 
+    font-size: 15px;
+    cursor: pointer;
+}

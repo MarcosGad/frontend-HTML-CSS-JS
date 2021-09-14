@@ -1,0 +1,19 @@
+div {
+    width: 400px; 
+    margin: 50px auto; 
+    font-size: 25px; 
+    text-align: center; 
+    font-family: Arial, Tahoma; 
+}
+
+div span {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+
+div span.count {
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #999; 
+}

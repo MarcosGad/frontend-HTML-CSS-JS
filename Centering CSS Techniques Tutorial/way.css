@@ -1,0 +1,26 @@
+/* 
+to center elements :- 
+
+1- horizontally 
+	- inline level element -> use text-align :center (text-links)
+	- block level element -> use margin:auto (div-p)
+	- more than one block level element 
+
+2- vertically :- 
+
+	- inline level element 
+		- singel line 
+		- multiple lines 
+	- block level element 
+	    - know height of element 
+	    - unknow height of element 
+	    - use flexbox 
+
+3- both horizontally & vertically :-
+
+	- element of fixed width & height 
+	- unknow width and height 
+	- use flexbox 
+	- use grid 
+
+*/ 

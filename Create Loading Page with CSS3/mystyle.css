@@ -1,0 +1,39 @@
+body{
+    background-color: #333132; 
+}
+
+h1{
+    text-align: center;
+   /* font-family: intro; */
+    position: absolute; 
+    top: 20%;
+    left: 33%; 
+    color: #fff; 
+    font-size: 50px; 
+}
+
+div{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+}
+
+#loadpage {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; /* lo 7bnya shkla morb3a momkn nl9a al radius */
+    background: transparent; 
+    
+    border-top: 4px solid #777; 
+    border-right: 4px solid #777; 
+    border-left: 4px solid #3498db; 
+    border-bottom: 4px solid #3498db;
+    
+    animation: load 1.2s infinite linear; 
+}
+
+@keyframes load {
+    to{
+        transform: rotate(360deg); 
+    }
+}

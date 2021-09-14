@@ -1,0 +1,9 @@
+https://github.com/mhuggins/jquery-countTo
+
+http://fancyapps.com/fancybox/3/
+https://github.com/fancyapps/fancybox
+
+https://www.kunkalabs.com/mixitup/
+https://github.com/patrickkunka/mixitup/
+
+https://github.com/inuyaksa/jquery.nicescroll

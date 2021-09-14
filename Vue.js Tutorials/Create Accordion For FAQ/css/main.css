@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.container{
+    margin: 20px auto;
+    width: 1200px;
+}
+.container .question-box:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.container .question-box h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #dfdfdf;
+}
+.container .question-box h3:hover {
+    cursor: pointer;
+}
+.container .question-box .question-reply{
+    background-color: #efefef;
+    padding: 15px;
+}
+.container .question-box .question-reply p{
+    margin: 0;
+}

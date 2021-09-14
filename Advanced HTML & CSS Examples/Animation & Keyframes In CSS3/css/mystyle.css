@@ -1,0 +1,31 @@
+div {
+    
+    width: 100px; 
+    height: 50px; 
+    background-color: #00f;
+    position: absolute;
+    animation-name: changeColor; /* name */
+    animation-duration: 3s; /* time */ 
+    animation-iteration-count: 2; /* 3dad al mart l2ma nkta rakm l2ma infinite 3ltoll  */ 
+    animation-timing-function: ease-in-out; /* ybd2 bra7a w ya5lsa bra7a */ /* ease-in ybd2a br7a */ /* ease-out ybd2a bosr3a */ 
+    
+    animation: changeColor 3s ease-in-out infinite;
+}
+
+/* @keyframes animationName {keyframes - selector {style css} } */
+
+@keyframes changeColor {
+    
+    /*from{background-color: #00f}
+    to {background-color: #f00}*/
+    
+    /*0%{background-color: #00f}
+    25%{background-color: #080}
+    50%{background-color: #ddd}
+    100%{background-color: #f00}*/
+    
+    0%{left:0}
+    100%{left: 100px;}
+    
+}
+

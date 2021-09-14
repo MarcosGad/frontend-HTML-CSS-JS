@@ -1,0 +1,54 @@
+body {
+    
+    background-color: #333; 
+    text-align: center; 
+}
+
+.button {
+    cursor: pointer; 
+    display: inline-block; 
+    background-color: #080; 
+    position: relative; 
+    margin: 40px; 
+    transition: background 0.3s ease-in-out; 
+}
+
+.button a {
+    width: 300px; 
+    padding: 15px; 
+    display: block; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 30px; 
+}
+
+.button .outline {
+    
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: transparent; 
+    outline: 2px solid #ddd; 
+    opacity: 0.3; 
+    top: 0; 
+    left: 0; 
+   /* animation: pulse 2s ease-in-out infinite alternate; /* alternate e3na ri7a gay */ 
+}
+
+.button:hover .outline {
+    
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.button:hover {
+    
+    background-color: #060; 
+}
+
+@keyframes pulse {
+    
+    0%{transform: scale(1,1); opacity: .3}
+    100%{transform: scale(1.1,1.3); opacity: .6}
+
+    
+}

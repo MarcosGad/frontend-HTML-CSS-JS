@@ -1,0 +1,31 @@
+table {
+    width: 600px; 
+    border: 1px solid #CCC; 
+    text-align: center; 
+}
+
+table td {
+    padding: 10px; 
+    border: 1px solid #CCC;
+}
+
+
+.our-table {
+    
+    display: table;
+    width: 600px; 
+    border: 1px solid #CCC;
+    text-align: center; 
+    margin-top: 20px; /* 3ashn yb3d 3n aly fo2 */ 
+}
+
+.our-table .our-row {
+    display: table-row; 
+}
+
+.our-table .our-row .our-cell {
+    display: table-cell;
+    padding: 10px; 
+    border: 1px solid #CCC;
+    vertical-align: middle; /* 3ashn ywsta al 5alia al table*/ 
+}

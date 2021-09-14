@@ -1,0 +1,45 @@
+.custom_seelct {
+    width: 300px; 
+    height: 40px; 
+    background-color: #EEE; 
+    position: relative; /* 3ashn koha heb2a f 3onsora absolute */ 
+}
+
+.custom_seelct select {
+    width: 100%;
+    height: 100%;
+   /* border: none; */ 
+    background: transparent; /* al 5lfya shfaf 3ashn tbyn 5alfet al div */ 
+    padding: 0 10px; 
+    -webkit-appearance : none; /* w hna 3ashn a5fa al sahm bta3 al motsf7a w a3mol ana br7ty */ 
+    -moz-appearance : none; /*al 5sia da 9er mostkra 7ta w2ta al video */ 
+    -o-appearance : none;
+    appearance : none;
+    position: relative; /* ltzbetooo */ 
+    z-index: 2; /* w hna n7dad mkan al tb2a al 5as ba al select*/
+}
+
+.custom_seelct:after {
+    content: "\f078"; /* w hna lma ro7na 3la al icon w 3mlna after w ktbna al content bt3ha  */
+    font-family: "FontAwesome"; /* mn 9erka al icon mash htzhra htb2a morb3a */ 
+    display: block; /* 3ashn mshkla al motsf7at */ 
+    width: 20px; 
+    height: 20px; 
+    line-height: 20px; /* artf3a al satr */ 
+    text-align: center; 
+    background-color: #00F; 
+    color: #FFF; 
+    position: absolute; 
+    top : 10px;
+    right: 10px; 
+    z-index: 1; /* w da 3ashn tkon fo2 al select w ndosa 3lha tft7a al option */ 
+}
+
+input[type="submit"] { /* 3ashn tasht9la al icon */ 
+    
+    font-family: "FontAwesome" , "Tahoma" ; /* tahoma 3ashn al text */ 
+    margin-top: 10px; 
+}
+
+
+

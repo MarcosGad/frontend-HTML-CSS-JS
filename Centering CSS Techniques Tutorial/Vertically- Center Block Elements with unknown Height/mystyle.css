@@ -1,0 +1,21 @@
+/* 2- (block) - > unknow height */ 
+
+
+div {
+    width: 200px; 
+    height: 250px; 
+    color: #fff; 
+    background-color: #000; 
+    position: relative; 
+}
+
+div p {
+    height: 50px; 
+    background-color: #00f;
+    position: absolute; 
+    top: 50%;
+    
+    margin: 0;
+    transform: translate(0,-50%); 
+  
+}

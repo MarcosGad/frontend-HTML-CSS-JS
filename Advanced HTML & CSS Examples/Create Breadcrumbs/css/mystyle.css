@@ -1,0 +1,30 @@
+ul.breadcrumb {
+    
+    background: #eee; 
+    list-style: none; 
+    font-size: 20px; 
+    padding: 15px; 
+}
+
+ul.breadcrumb li {
+    
+    display: inline-block; 
+}
+
+ul.breadcrumb li + li:before {  /* kolha m3da 2bla al home */ 
+    
+    content: "/\00a0"; /* / */  
+    padding-right: 10px; 
+}
+
+ul.breadcrumb li a {
+    
+    text-decoration: none; 
+    color: #080; 
+    padding: 4px; 
+}
+
+ul.breadcrumb li a:hover {
+    
+    text-decoration: underline; 
+}

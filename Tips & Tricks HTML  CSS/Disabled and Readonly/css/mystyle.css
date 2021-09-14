@@ -1,0 +1,19 @@
+/* 
+
+1- focus  readonly->on   disabled->off
+
+2- tap readonly->on   disabled->off
+
+3- get post(send data)   readonly->on   disabled->off  send data
+
+*/ 
+
+/*input[readonly]:focus {
+    
+    background: #f00; al focus hysht9la 
+}*/
+
+/*input[disabled]:focus {
+    
+    background: #f00;  al focus mash hysht9la  
+}*/

@@ -1,0 +1,147 @@
+/* 
+
+********* Problems ************* 
+
+--- Don't start with Arabic Design. لا نقوم في البداية بتنفيذ التصميم العربي نقوم بالتصميم الانجليزي لانه هو الوضع الافتراضي 
+--- programmers note: Don't use words Direct in template. لا نستخدم الكلمات العربي مباشرا لو مثلا بنستخدم لغة برمجية 
+--- padding and margin for parent better than child. اعطي بادنج او مرجن للأب عشان متترش تدي مارجن وبادج لكل عنصر في ملف الاستيل العربي مرة والانجليزي مرة
+
+
+--- padding and margin left + right better than one direction. ممكن تدي تنساقات مثل مارجن شمال ويمين في ملف استيل واحد عشان توفر الكتابة في ملف الاستيل العربي
+--- Don't forget page direction attribute لا تنسي كتابة dir="rtl" في ملف تصميم العربي
+--- highlight what you will edit soon حدد التنسقات الي هيتم تعديها في الوقت القادم عن طريق مثلا كتابة كومنت  Rtl
+--- make the direction edits in the same time عمل ملف تنسقات العربي في نفس وقت تنسقات الانجليزي بعد كل خطوة 
+
+
+--- Don't ever forget comments and ordering of elements عدم نسي الكومنت وترتيب الاكواد 
+--- use inline-block instead of float if you Don't need float لو انت مش محتاج الفلوت 
+--- RTl file is for direction only الملف يستخدم للاتجهات فقط وليس للالوان والخلفيات 
+--- RTl file after main file ملف تنسقات العربي بعد الملف الاصلي 
+
+
+--- consider word lenght when specify element widht مرعاة عرض كلمات العربي والانجليزي 
+--- Don't Destroy Nesting when creating RTl file لا تنسي نظلم النسنيج  
+--- Don't use element That need to change like arrows. use pseudo elements استخدم البيفور والافتر في هذه الحالة عشان لا اغير في الكود 
+
+
+********* Help You **************
+
+--- <bdi> تاج يقوم بعزل النص عن الاتجاه الذي يوجد فيه من الاساس 
+--- Dir = [Auto] تستعمل في حقول الادخال 
+--- text-align [start / end] في محاذة النصوص 
+--- float: inline-start / inline-end انه لما تقوم استرت يبدا من الاول الي الاخر حسب ديركشن الصفحة 
+
+
+********* Helpers classes **************
+--- use a framwork (bootstrap , foundation , semantic UI)
+--- float classes (f-left / f-right)
+--- text align classes (text-right / text-left)
+--- Direction classes (ltr-dir / rtl-dir)
+
+
+******* properties ****************
+--- margin مرعاة هذه الخواص في تنفيذ تنسقات العربي 
+--- padding 
+--- border-radius 
+--- pseudo elements (before / after)
+--- border 
+
+--- box-shadwo اتجاه الشادو بيتغير من اتجاه للأخر او ممكن يكون من جميع الاتجاهات افضل وبنستخدمة علامة السالب لعكس القيمة في ملف التنسقات الاخر 
+--- float 
+--- transform : rotate ايضا بنعكس القيمة في التنسقات الاخر بقيمة السالب 
+--- text-align 
+--- position تخلي بالك انك تعمل ريست للقيمة الي موجود في التنسيق الاخر 
+*/
+
+
+
+/* start my framework */ 
+
+.f-left {
+    
+    float: left; 
+} 
+
+div h3 {
+    
+    margin: 0; /* reset */
+    margin-left: 10px; 
+    margin-right: 10px;
+    left: 0 /* Rtl */ 
+    
+}
+
+.parent {
+    
+    
+}
+
+.parent .child{
+    
+    background-color: #DDD; 
+    width: 25%; 
+    height: 100px; 
+    margin-bottom: 10px; 
+    float: left; 
+    
+}
+
+
+.parent .tag{
+    
+    background-color: #DDD; 
+    height: 30px; 
+    margin-bottom: 10px; 
+    display: inline-block; 
+}
+
+.parent span:after {
+    
+    font-family: 'FontAwesome';
+    content: '\f053'; 
+    color: #333; 
+}
+
+.par .chi {
+    
+    background-color: #ddd; 
+    margin: 20px auto; 
+    width: 300px; 
+    height: 100px; 
+    position: relative; 
+    
+    border-width: 0 0 0 5px; 
+    border-color: #f00; 
+    border-style: solid; 
+}
+
+.par .chi:after {
+    
+    content: ''; 
+    position: absolute; 
+    right: -30px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border-width: 15px; 
+    border-style: solid; 
+    border-color: transparent transparent transparent #ddd; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+      <div id="elzero-app" class="container">
+        <div class="grad-box" :style="{ backgroundImage: 'linear-gradient('+ direction +', '+ ColorOne +', '+ ColorTwo +')' }">Gradient Preview</div>
+
+        <form>
+          <div class="form-group">
+            <label for="">Direction</label>
+            <input type="text" v-model="direction" />
+          </div>
+          <span class="separator">|</span>
+          <div class="form-group">
+            <label for="">Color Stop One</label>
+            <input type="text" v-model="ColorOne" />
+          </div>
+          <span class="separator">|</span>
+          <div class="form-group">
+            <label for="">Color Stop Two</label>
+            <input type="text" v-model="ColorTwo" />
+          </div>
+        </form>
+
+        <div class="result">
+          <span>Css Code: </span> background-image: linear-gradient({{ direction }}, {{ ColorOne }}, {{ ColorTwo }});
+        </div>
+        <div class="syntax">
+          <span>Syntax: </span> background-image: linear-gradient(direction, color-stop1, color-stop2, ...); 
+        </div>
+      </div>
+      <script src="js/vue.js"></script>
+      <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+              direction: 'to right',
+              ColorOne: '#FF0000',
+              ColorTwo: '#FFFF00'
+            }
+        }); 
+      </script>
+  </body>
+</html>

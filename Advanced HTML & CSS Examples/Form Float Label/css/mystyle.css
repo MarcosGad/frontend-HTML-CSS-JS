@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;   
+    
+}
+
+.content {
+    
+    width: 250px; 
+    margin: auto; 
+    background-color: #f6f6f6; 
+    padding: 20px; 
+}
+
+.content .ct_input {
+    
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+
+
+.content .ct_input input {
+    
+    width: 100%; 
+    padding: 5px; 
+    border: 0; 
+    border-bottom: 1px solid #000; 
+    background-color: transparent; 
+    outline: 0; 
+}
+
+.content .ct_input label {
+    
+    position: absolute; 
+    top: 5px; 
+    transition: 0.3s; 
+}
+
+.content input[type=submit] {
+    
+    width: 100%; 
+    background-color: #ccc;
+    border: 0;
+    padding: 10px; 
+}
+
+
+.content .ct_input input:focus + label {
+    
+    top: -10px; 
+}
+
+.content .ct_input input:valid + label {  /* valid e3na aly atktb s7 momkn n3mla css  */ 
+    
+      top: -10px; 
+      color: #080; 
+    
+} 

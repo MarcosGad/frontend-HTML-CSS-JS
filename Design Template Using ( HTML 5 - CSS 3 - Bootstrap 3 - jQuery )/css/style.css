@@ -1,0 +1,1189 @@
+/* General style */
+body {
+    font-family: lucida sans; 
+}
+
+.sections {
+    
+    padding: 20px 0; 
+}
+ 
+
+.overlay {
+    position: absolute; 
+    top: 0; /* 0 = w and h 100% */ 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.6); 
+}
+
+.section-header .section-title {
+    font-size :40px; 
+}
+
+.section-header .line {
+    width: 150px; 
+    background-color: #ddd; 
+    height: 2px; 
+    margin: auto; 
+}
+
+.section-header .line span {
+    display: block; 
+    width: 100px; 
+    height: 4px; 
+    background-color: #7cb62f; 
+    margin: auto; 
+    position: relative; /* a7rka al span l fo2 shoya */ 
+    bottom: 2px; 
+}
+
+.section-header p {
+    
+   /* width: 500px; hy3mla moshkla fa al responsev */
+    width: 50%; 
+    color: #888; 
+    margin: 20px auto; 
+    line-height: 1.5; 
+}
+
+@media (max-width:575px){
+    
+    .section-header p {
+        width: 80%; 
+    }
+    
+    
+}
+
+/* header */
+
+header {
+    height: auto; /* 3la ad al m7toa */ 
+    padding: 10px 0; /* fo2 w t7ta and yman w shmal */ 
+    /*border-bottom: 1px solid #000; */
+    position: fixed; /* 3asn ykon fo2 section */
+    width: 100%; 
+    z-index: 999; /* yazhra */  
+}
+
+/*.sticky {
+   background: #000; 
+   color: #fff; 
+}*/
+
+
+header i.icon {
+    position: absolute; 
+    right: 30px; 
+    top: 32px; 
+    cursor: pointer; 
+    z-index: 10; 
+    display: none; /* 3ashn yzhra f al screen aly a7dadha */ 
+}
+
+header .logo h2 {
+    font-size: 30px; 
+    color: #fff;
+}
+
+header nav .nav-list {
+    list-style: none; 
+    margin-bottom: 0; 
+    display: flex; /* li gnba b3da  */ 
+    justify-content: space-around; /* space between li */ 
+}
+
+/*header nav .nav-list .list {
+    display: inline-block; /* li gnba b3da 
+}*/ 
+
+header nav .nav-list .list a {
+    /*background: #000; */
+    display: block; 
+    padding: 15px 0; 
+    margin: 9px 0; 
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; 
+}
+
+header nav .nav-list .list a:hover {
+    color: #7cb62f; 
+}
+
+
+.sticky {
+   background: #fff; 
+   color: #000; 
+   box-shadow: 0 2px 10px 0 #000; 
+}
+
+.sticky .logo h2 {
+    
+    color: #000; 
+}
+
+.sticky nav .nav-list .list a {
+    
+    color: #000; 
+}
+
+@media (max-width:575px) {
+    
+    
+    header {
+        background: #000; 
+    }
+    
+    header nav .nav-list {
+        /*display: block; /* al screen sm bl9ya al flex */ 
+        text-align: center; 
+        padding: 0; 
+        display: none; /* a5fa al li 3ashn lma a3mla click 3la icon yazhra bla js */ 
+    }
+    
+    header .logo {
+        text-align: center; 
+    }
+    
+    header i.icon {
+        display: block; /* 3ashn yazhra */ 
+        color: #fff; 
+    }
+      
+    
+}
+
+
+/* home section */ 
+
+.home {
+    height: 600px; 
+    background-image: url(../images/home/ws_Colorado_Road_1680x1050.jpg);
+    background-size: cover; 
+    background-position: center; 
+    position: relative; /* 3ashn al overlay */    
+}
+
+.home .home-content { /* content center fkraaa gdedaaa*/ 
+   
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+}
+
+.home .home-title {
+    color: #fff; 
+    font-size: 45px; 
+    margin-bottom: 20px; 
+}
+
+.home .home-desc {
+    
+    color: #DDD; 
+    font-size: 18px; 
+}
+
+.home .button {
+    background-color: #7cb62f; 
+    color: #fff; 
+    width: 150px; 
+    text-align: center; 
+    padding: 10px 0;
+    transition: all 0.5s ease-in-out; 
+}
+
+.home .button:hover {
+    
+    background-color: #fff; 
+    color: #7cb62f;  
+}
+
+@media(max-width:575px) {
+    
+    .home .home-title {
+     font-size: 25px;  
+     margin-top: 50px; 
+    }
+    
+    .home .button {
+        margin-bottom: 10PX; 
+    }
+    
+}
+
+
+/* about */ 
+
+.about .about-info h3 {
+    
+    font-size: 25px; 
+    font-weight: normal; 
+    margin-bottom: 20px; 
+}
+
+.about .about-info h3 span {
+    color:  #7cb62f;
+}
+
+.about .about-info .about-info-desc {
+    line-height: 1.8; 
+    color: #888; 
+    margin-bottom: 20px;
+}
+
+.about .about-info .about-info-btn {
+    background-color: #7cb62f;
+    padding: 10px 20px; 
+    border: 0; 
+    color: #fff; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+}
+
+.about .about-img img {
+    
+    width: 100%; /* 3ashn tmla al msa7a kolha */ 
+}
+
+@media (max-width:575px){
+    
+    .about .about-info h3 {
+        font-size: 20px; 
+    }
+    
+    
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    
+    .about .about-info {
+        text-align: center; 
+    }
+    
+    
+}
+
+
+/* services */
+
+
+.services {
+    
+    background-color: #f7f7f7; 
+}
+
+.services .serv {
+    background-color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    transition: all 0.5s ease-in-out; 
+}
+
+.services .serv i.icon {
+    
+    background-color: #7cb62f; 
+    width: 60px; 
+    height: 60px; 
+    text-align: center; 
+    line-height: 60px; 
+    color: #fff; 
+    border-radius: 50%; 
+    border: 2px solid #f6f6f6; 
+    transition: all 0.5s ease-in-out;
+}
+
+.services .serv-title {
+    
+    font-weight: bold; 
+    font-size: 25px; 
+    margin-bottom: 20px; 
+    color: #777; 
+    transition: all 0.5s ease-in-out;
+}
+
+.services .serv-desc {
+    font-size: 17px; 
+    color: #888;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.services .serv:hover {
+    background-color: #7cb62f; 
+    
+}
+
+.services .serv:hover i.icon {
+    background-color: #fff; 
+    color: #7cb62f;
+}
+
+.services .serv:hover .serv-title ,
+.services .serv:hover .serv-desc {
+    color: #fff; 
+}
+
+
+/* stat */ 
+
+.stat {
+    height: 250px; 
+    background-image: url(../images/stat/accountingfincotdept500.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; /* 3ashn al overlay */ 
+}
+
+.stat .stat-info {
+    margin: 50px 0; 
+    text-align: center; 
+}
+
+.stat .stat-info i , 
+.stat .stat-info span {
+    display: block; 
+    margin: auto; 
+    margin-bottom: 15px;
+    color: #fff; 
+}
+
+.stat .stat-info i {
+    
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    line-height: 60px; /* 3ashn tkon f al center */ 
+    background-color: #7cb62f; 
+    text-align: center; 
+    font-size: 20px; 
+}
+
+.stat .stat-info span.timer  { /* span aly wa5da class timer */ 
+    font-size: 20px; 
+    
+}
+
+.stat .stat-info .stat-info-title {
+    text-transform: capitalize; 
+    font-size: 20px; 
+}
+
+@media (max-width : 991px){
+    
+    .stat {
+        height: 900px; /* 3ashn al img */ 
+    }
+}
+
+
+/* portfolio */
+
+.portfolio .buttons {
+    width: 60%; 
+    margin: auto; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.portfolio .buttons button {
+    width: 100px; 
+    background-color: #333;
+    color: #fff; 
+    border: 0; 
+    padding: 10px; 
+    outline: 0; 
+}
+
+.portfolio .images > div {
+    margin-bottom: 20px; 
+}
+
+.portfolio .images > div img{
+    width: 100%; 
+}
+
+.portfolio .more {
+    
+    width: 250px; 
+    padding: 10px; 
+    background-color: #333; 
+    color: #fff; 
+    border: 0; 
+    display: block; /* 3ashn a2dra a3mla margin w a5la al 3onsra f al center */ 
+    margin: auto; 
+    outline: 0; /* 3ashn al 5ta al 2zr2a lma bd5ta click 3lya */ 
+}
+
+.active-btn {
+    background-color: #7cb62f !important; 
+}
+
+
+/* exprets */ 
+
+.exprets  {
+    background-color: #4c4c4c; 
+}
+
+.exprets .section-title {
+    
+    color: #fff; 
+}
+
+.exprets .progress-content {
+    
+    margin-top: 20px; 
+}
+
+
+.exprets .progress {
+    
+    width: 150px; 
+    height: 150px; 
+    background: none; 
+    box-shadow: none; /* 3ashn al 5ta al 5faf al 7olna al box */ 
+    margin: 0 auto; 
+    position: relative; 
+}
+
+.exprets .progress > span { /* al tfla al mobashr */ 
+    
+    position: absolute; 
+    width: 50%; 
+    height: 100%; 
+    top: 0; 
+    overflow: hidden; /* ay 7ga 5arga t9tfa */ 
+    z-index: 2; 
+}
+
+.exprets .progress .progress-value {
+    position: absolute; 
+    width: 90%; 
+    height: 90%; 
+    border-radius: 50%; 
+    top: 5%; 
+    left: 5%; 
+    background-color: none; 
+    color: #fff; 
+    font-size: 25px; 
+    text-align: center; 
+    line-height: 135px; 
+}
+
+.exprets .progress .progress-left {
+    left: 0; 
+}
+
+.exprets .progress .progress-right {
+    right: 0; 
+}
+
+.exprets .progress .progress-bar {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    background: none; 
+    border-width: 10px; 
+    border-style: solid; 
+}
+
+.exprets .progress.blue .progress-bar {
+    border-color: #049dff; 
+}
+
+.exprets .progress.yellow .progress-bar {
+    border-color: #fdba04; 
+}
+
+.exprets .progress .progress-left .progress-bar {
+    left: 100%; 
+    border-top-right-radius: 80px; 
+    border-bottom-right-radius: 80px; 
+    border-left: 0; 
+    transform-origin: left; 
+}
+
+.exprets .progress .progress-right .progress-bar {
+    right: 100%; 
+    border-top-left-radius: 80px; 
+    border-bottom-left-radius: 80px; 
+    border-right: 0; 
+    transform-origin: right; 
+    animation: load1 1.8s linear forwards; /* forwards 3ashn ykmla aly b3dya */ 
+}
+
+.exprets .progress.blue .progress-left .progress-bar {
+    
+    animation: load2 1.5s linear forwards 1.8s;
+}
+
+.exprets .progress.yellow .progress-left .progress-bar {
+    
+    animation: load3 1s linear forwards 1.8s;
+}
+
+
+
+@keyframes load1 {
+    0% {
+        transform: rotate(0); 
+    }
+    
+    100% {
+        transform: rotate(180deg); 
+    }
+}
+
+@keyframes load2 {
+    0% {
+        transform: rotate(0); 
+    }
+    
+    100% {
+        transform: rotate(144deg); 
+    }
+}
+
+@keyframes load3 {
+    0% {
+        transform: rotate(0); 
+    }
+    
+    100% {
+        transform: rotate(90deg); 
+    }
+}
+
+
+.exprets .title {
+    font-size: 20px; 
+    color: #fff; 
+    text-align: center; 
+    margin-top: 20px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    
+}
+
+
+
+
+/* pricing */ 
+
+.pricing {
+    background-color: #f7f7f7; 
+}
+
+.pricing .plan {
+    text-align: center; 
+    background-color: #fff; 
+    transition: all 0.5s ease-in-out;
+}
+
+.pricing .plan .plan-title {
+    background-color: #252525; 
+    color: #fff; 
+    padding: 10px 0; 
+    transition: all 0.5s ease-in-out; 
+}
+
+.pricing .plan .plan-title span {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.pricing .plan .plan-title .price {
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+.pricing .plan .plan-title .title {
+    font-size: 15px; 
+    font-weight: normal; 
+}
+
+.pricing .plan .pl-desc {
+    margin: 0; 
+    padding: 20px 0; 
+    font-size: 20px; 
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 10px; 
+}
+
+.pricing .plan ul li {
+    
+    padding: 10px; 
+}
+
+.pricing .plan .plan-btn {
+    background-color: #252525; 
+    width: 100%; /* msa7ta al aba kolha */ 
+    border: 0; 
+    padding: 10px; 
+    font-size: 20px; 
+    color: #fff; 
+    transition: all 0.5s ease-in-out;
+}
+
+/*
+
+.pricing .plan:hover { /* yt7rka lfo2 shoya w ndya transition lla aba   
+    margin-top: -10px;  
+}
+
+*/
+
+.pricing .plan:hover .plan-title,
+.pricing .plan:hover .plan-btn {
+    
+    background-color: #7cb62f; 
+}
+    
+ 
+
+/* team */ 
+
+.team .team-info {
+    text-align: center;   
+}
+
+.team .team-info .item-info-title {
+    margin: 5px 0; 
+}
+
+.team .team-info .item-info-desc {
+    
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.team .team-info .team-info-social {
+    
+    position: relative; 
+    background-color: #252525; 
+    padding: 18px; 
+    color: #fff; 
+    display: flex; /* 3la al shmal */ 
+    justify-content: space-between; /* bnhom al space */ 
+}
+
+.team .team-info .team-info-social i {
+    position: relative; 
+    z-index: 15; 
+}
+
+.team .team-info .bg {
+    display: block; 
+    /* background-color: #F50; */
+    position: absolute; 
+    bottom: 0; 
+    top: 0; 
+    left: 0; 
+    width: 0;
+    transition: all 0.5s ease-in-out; 
+}
+
+.team .team-info:hover .bg{
+    width: 100%;/* 3ashn ytkrka bla tola */ 
+    background-color: #7cb62f; 
+}
+
+
+/* business */ 
+
+.business {
+    background-image: url(../images/stat/accountingfincotdept500.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; /* shkla 7lo img */ 
+    position: relative; /* 3ashn al overlay */ 
+    height: 250px; 
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+.business .bs-info {
+    margin: 40px 0; 
+}
+
+.business .bs-info .bs-title {
+    
+    font-size: 35px; 
+}
+
+.business .bs-info .bs-desc {
+    width: 60%; 
+    margin: auto; 
+    font-size: 15px; 
+    margin-bottom: 20px;
+    color: #aaa; 
+}
+
+.business .bs-info .bs-btn {
+    padding: 10px 20px; 
+    background-color: #7cb62f; 
+    border: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    
+    .business {
+        height: 330px; 
+    }
+    
+    .business .bs-info .bs-title {
+        
+        font-size: 20px; 
+    }
+    
+    .business .bs-info .bs-desc {
+        
+        width: 80%; 
+        font-size: 18px; 
+    }
+}
+
+
+/* choose */ 
+
+.choose {
+    background-color: #f7f7f7; 
+}
+
+.choose .c-panel ul {
+    background-color: #333; 
+    color: #fff;
+    display: flex;
+    margin: 0; 
+    padding: 0; 
+}
+
+.choose .c-panel ul li {
+    padding: 15px 20px; 
+    cursor: pointer; 
+}
+
+.choose .c-panel .content {
+    
+    background-color: #fff; 
+}
+
+.choose .c-panel .content .c-info {
+    
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.choose .c-panel .content .c-info img {
+    
+    width: 40%; 
+    float: left; 
+    padding-right: 10px; 
+}
+
+.choose .c-panel .content .c-info p {
+    padding: 10px; 
+    color: #888; 
+    line-height: 1.5; 
+}
+
+.choose .c-panel .content .content2,
+.choose .c-panel .content .content3 {
+    display: none; 
+}
+
+.choose .video {
+    background-color: #636363; 
+    padding: 124px 0; 
+    text-align: center; 
+    color: #fff; 
+}
+
+.choose .video i {
+    background-color: #f00; 
+    color: #fff; 
+    padding: 15px; 
+    cursor: pointer; 
+}
+
+/* testimonail */ 
+
+.testimonial {
+    
+    background-color: #333333; 
+   /* background-image: url(../images/testimonial/accountingfincotdept500.jpg); 
+    background-size: cover; 
+    background-position: center; */
+}
+
+.testimonial .section-header {
+    color: #fff; 
+}
+
+.testimonial .test-info {
+    
+    text-align: center; 
+    background-color: #141414; 
+    padding: 20px 10px; 
+    color: #fff; 
+}
+
+.testimonial .test-info img {
+    
+    display: block; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    border: 2px solid #000; 
+    margin: auto; 
+}
+
+
+.testimonial .test-info .test-info-title {
+ 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.testimonial .test-info .test-info-span {
+    
+    color: #999; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.testimonial .test-info i {
+    
+    color: #f2b100; 
+    margin-bottom: 10px; 
+}
+
+.testimonial .test-info .test-info-desc {
+    
+    color: #999; 
+}
+
+
+/* blog */  
+
+.blog .blog-info {
+    
+    text-align:left; 
+    margin-bottom: 10px; 
+}
+
+.blog .blog-info img {
+    width: 100%; /* 3la ad al div */ 
+}
+
+.blog .blog-info span {
+    
+    color: #888; 
+    padding-right:  10px; 
+}
+
+.blog .blog-info span i {
+    color: #7cb62f; 
+}
+
+.blog .blog-info .blog-info-desc {
+    
+    color: #888; 
+}
+
+.blog .blog-info .blog-info-btn {
+    
+    background-color: #7cb62f; 
+    padding: 10px 20px; 
+    color: #fff; 
+    border: 0; 
+}
+
+
+/* pleasure */ 
+
+.pleasure {
+    
+    background-color: #333; 
+    color: #fff; 
+    padding: 80px 0; 
+}
+
+.pleasure .pleasure-info i {
+    
+    color: #7cb62f; 
+    font-size: 40px; 
+    margin-bottom: 10px; 
+}
+
+.pleasure .pleasure-info .pleasure-info-desc {
+    
+    width: 60%; 
+    margin: auto; 
+    color: #ddd; 
+    margin-bottom: 10px; 
+}
+
+.pleasure .pleasure-info .pleasure-info-desc span {
+    
+    color: #7cb62f;
+}
+
+.pleasure .pleasure-info .pleasure-info-text {
+    
+    font-style: italic; 
+    color: #ddd; 
+}
+
+
+/* next */ 
+
+
+.next {
+    background-color: #7cb62f; 
+}
+
+.next .next-desc {
+    
+    font-size: 25px; 
+    color: #fff; 
+    margin-top: 7px; 
+}
+
+.next .next-btn {
+    background-color: #333; 
+    font-size: 20px; 
+    padding: 10px 20px; 
+    color: #fff; 
+    outline: 0;
+    border: 0; 
+    
+}
+
+
+@media (max-width: 768px) {
+    
+    .next {
+        text-align: center; 
+    }
+    
+}
+
+
+/* contact us */ 
+
+.contact {
+    background-color: #f7f7f7; 
+}
+
+.contact .contact-info .contact-info-desc {
+    
+    color: #888; 
+    line-height: 1.6; 
+}
+
+.contact .contact-info span {
+    display: block; 
+    margin-bottom: 10px; 
+    
+}
+
+.contact .contact-info span i {
+    
+    border: 1px solid #7cb62f; 
+    width: 40px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 40px; /* 3ashn twstna al i */ 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    color: #7cb62f; 
+    transition: all 0.5s ease-in-out; 
+}
+
+.contact .contact-info span:hover i {
+    
+    background-color: #7cb62f;
+    color: #fff; 
+}
+
+.contact form .form-group {
+    
+    display: flex; /* hy2sma kol 2 input f al div gnb b3da */ 
+}
+
+.contact form .form-control:focus {
+    
+    border-color: #888; 
+}
+
+.contact form textarea {
+    
+    height: 250px; 
+}
+
+.contact form .form-btn {
+    
+    background-color: #7cb62f; 
+    padding: 10px 20px; 
+    margin:10px auto; 
+    border: none; 
+    font-size: 20px; 
+    color: #fff; 
+    display: block; 
+    outline: 0; 
+} 
+
+@media (max-width:575px) {
+    
+    .contact form .form-group {
+        
+        display: block; 
+    }
+    
+    .contact form .form-group input {
+        
+        margin-bottom: 10px; 
+    }
+    
+}
+
+
+/* footer */ 
+
+footer {
+    background-color: #333; 
+    color: #888; 
+}
+
+footer h3 {
+    
+    color: #fff; 
+    border-bottom: 1px solid #888; 
+    padding: 5px; 
+    margin-bottom: 30px; 
+}
+
+footer .footer-icon {
+    width: 30px; 
+    height: 30px; 
+    text-align: center; 
+    line-height: 30px !important; 
+    color: #fff; 
+}
+
+
+footer .footer-icon:nth-of-type(1){
+    
+    background-color: #3b5998; 
+}
+
+footer .footer-icon:nth-of-type(2){
+    
+    background-color: #55acee; 
+}
+
+footer .footer-icon:nth-of-type(3){
+    
+    background-color: #dd4b39; 
+}
+
+footer .footer-icon:nth-of-type(4){
+    
+    background-color: #ff0000; 
+}
+
+footer .footer-icon:nth-of-type(5){
+    
+    background-color: #007bb5; 
+}
+
+footer ul li {
+    
+    padding: 10px 0; 
+    border-bottom: 1px solid #888; 
+    color: #fff; 
+}
+
+footer button {
+    
+    padding: 5px 10px; 
+    background: #696969;
+    border: 0; 
+    color: #f7f7f7; 
+    margin-bottom: 5px; 
+}
+
+footer img {
+    width: 70px; 
+    height: 70px; 
+    border: 1px solid #888; 
+    padding: 1px; 
+}
+
+
+.copyright {
+    background-color: #232323; 
+    color: #fff; 
+}
+
+.copyright .copy-desc , .copyright ul {
+    margin: 0; 
+}
+
+.copyright .copy-desc  i {
+    
+    color: #7cb62f;
+}
+
+.copyright ul {
+    display: flex; /* ykon gnba b3da */ 
+    justify-content: space-between; /* space */ 
+}
+
+.copyright ul li {
+    cursor: pointer; 
+    transition: all 0.5s ease-in-out; 
+}
+
+.copyright ul li:hover {
+    
+    color: #7cb62f;
+    
+}
+
+@media (max-width:575px){
+    
+    .copyright ul{
+        
+        display: block; 
+    }
+}
+
+
+/* scroll top */ 
+
+.scrollTop {
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color: #7cb62f; 
+    color: #fff; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 40px; 
+    text-align: center; 
+    cursor: pointer; 
+    display: none;
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+.text {
+    
+    width: 200px; 
+    height: 200px; 
+    background-color: #ddd; 
+    color: #222; 
+    text-align: center; 
+    margin: auto; 
+    line-height: 200px; 
+}
+
+p {
+    
+    font-size: 20px; 
+    animation: shadow 5s ease-in-out infinite; 
+}
+
+@keyframes shadow {
+    
+    0%{ text-shadow: 5px 2px 3px #f50 }
+    50%{ text-shadow: -5px 2px 3px #f50 }
+    100%{ text-shadow: 5px 2px 3px #f50  }
+}

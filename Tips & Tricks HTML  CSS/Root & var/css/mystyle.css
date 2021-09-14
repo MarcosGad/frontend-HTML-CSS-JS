@@ -1,0 +1,19 @@
+:root { /* root = html */ 
+   
+    --padding: 10px;   /* hna g3la al padding mot9er */ 
+    --u: 20px; 
+    --color: #000; 
+}
+
+div {
+    width: 100px; 
+    height: 100px; 
+    background-color: #080; 
+    color: var(--color); 
+    padding: var(--padding); /* a3wod 3la al mot9er bla var */ 
+    margin: var(--u); 
+}
+
+p{
+    color: var(--color); 
+}

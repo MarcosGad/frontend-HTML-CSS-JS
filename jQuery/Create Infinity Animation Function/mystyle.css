@@ -1,0 +1,20 @@
+.offer {
+    
+    width: 600px;
+    height: 400px; 
+    text-align: center; 
+    margin: 300px; 
+    font-family: Arial, Tahoma; 
+    position: relative; 
+    background: #EEE;
+    padding: 10px; 
+    
+    
+}
+
+.offer img {
+    position: absolute; 
+    top:-210px; /* 3ashn tkon bar al photo */ 
+    left:150px; 
+    
+}

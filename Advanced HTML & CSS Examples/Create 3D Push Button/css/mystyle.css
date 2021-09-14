@@ -1,0 +1,29 @@
+body {
+    
+    background-color: #eee; 
+}
+
+a {
+    
+    display: block; 
+    color: #fff;
+    text-decoration: none; 
+    width: 100px; 
+    text-align: center; 
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif; 
+    background: rgba(219,78,51,1); 
+    margin: 100px auto; 
+    border-radius: 5px; 
+    font-size: 20px;
+    font-weight: bold; 
+    box-shadow: 0 10px 0 rgba(219,31,5,1) , 0 10px 25px rgba(0,0,0,.7);
+}
+
+a:active {
+    
+        box-shadow: 0 3px 0 rgba(219,31,5,1) , 0 3px 5px rgba(0,0,0,.3);
+        position: relative; 
+        top : 5px;
+
+}

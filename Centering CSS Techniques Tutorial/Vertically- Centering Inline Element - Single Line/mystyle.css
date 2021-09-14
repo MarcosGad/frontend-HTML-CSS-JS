@@ -1,0 +1,22 @@
+/* 2- (inline) -- single line -> padding or line-height */ 
+
+nav {
+    background-color: #ddd;
+    padding: 10px; 
+}
+
+nav a {
+    background-color: #000; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 20px 10px; /* htkon al kalma first link mtwstma */ 
+}
+
+div {
+    margin-top: 100px;
+    width: 200px; 
+    height: 200px; 
+    background-color: #000; 
+    color: #fff; 
+    line-height: 200px; /* nfsa al width */ 
+}

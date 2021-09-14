@@ -1,0 +1,22 @@
+body {
+   /* height: 3000px*/
+}
+
+.a,.b,.c {
+    color: #FFF;
+}
+
+.a{
+    background-color: #F00; 
+   
+}
+
+.b{
+    background-color: #00F; 
+    
+}
+
+.c{
+    background-color: #080; 
+   
+}

@@ -1,0 +1,43 @@
+.my-container {
+    
+    margin: 50px auto;
+    width: 800px;
+    
+}
+
+ul{
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li {
+    display: inline-block; /* kolhom f safa wa7d */ 
+    padding: 10px; 
+    background: #EEE; 
+    text-align: center; 
+    cursor: pointer; 
+    
+}
+
+ul li.inactive {
+    background: #CCC; /* mezta al 3 aly mash f3lna */ 
+}
+
+.my-container div {
+    background: #EEE; 
+    padding: 10px; 
+    min-height: 300px; 
+}
+
+.my-container div:not(:first-of-type) { /* e3na sab al div al 2ola w 5oda al ba2ia */ 
+    
+    display: none; 
+}
+
+
+
+
+
+
+

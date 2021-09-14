@@ -1,0 +1,39 @@
+<div>heloo this is me</div>
+
+
+
+
+
+
+
+$sitelanguage: English;    /* lo hnfza tnskat al Arabic hekon $sitelanguage: Arabic; */ 
+
+
+
+
+$float: left; 
+$textAlign: left; 
+
+
+@if $sitelanguage == Arabic (
+
+    float: right; 
+    textAlign: right;
+    
+    div {
+         padding-right: 10px; 
+            
+        }
+
+    )
+
+
+div {
+    float: $float;
+    text-align: $textAlign; 
+    background-color: #eee; 
+    padding-left: 10px; 
+    margin: 50px; 
+    width : 300px; 
+
+}

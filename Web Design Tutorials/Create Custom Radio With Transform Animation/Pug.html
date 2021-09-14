@@ -1,0 +1,56 @@
+<!-- Html(Pug) -->
+
+- for (var i = 1; i < 10; i++)
+.z-radio
+ input(type="radio",name="custom",id="id-" + i)
+ label(for="id-" + i) Radio Option #{i}
+
+ <!-- Css (scss) -->
+
+ .z-radio{
+  margin: 20px; 
+  input[type="radio"] {
+      -webkit-appearance: none;
+      &:checked + label {
+        &:before {
+          border-color: #E91E63; 
+        }
+        &:after{
+          transform: scale(1); 
+        }
+      }
+    }
+  label {
+      position: relative; 
+      cursor: pointer; 
+      padding-left: 30px; 
+      font-weight: bold; 
+      color: #555; 
+      &:before {
+        content: '';
+        width: 20px; 
+        height: 20px; 
+        border-radius: 50%; 
+        background-color: #eee; 
+        border: 1px solid #5a5a5a;
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+    }
+    &:after{
+      content: ''; 
+      position: absolute; 
+      top: 4px; 
+      left: 4px; 
+      width: 12px; 
+      height: 12px; 
+      background-color: #e91e63; 
+      border-radius: 50%; 
+      transform: scale(0); 
+      transition: all .5s ease-in-out; 
+    }
+   }
+ }
+
+
+  

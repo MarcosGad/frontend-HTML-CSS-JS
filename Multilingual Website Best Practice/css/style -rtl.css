@@ -1,0 +1,35 @@
+/* start my framework */ 
+
+.f-left {
+    
+    float: right; 
+} 
+
+
+.parent .child{ 
+    
+float: right; 
+    
+}
+
+.parent span:after {
+    
+    font-family: 'FontAwesome';
+    content: '\f054'; 
+    color: #333; 
+}
+
+.par .chi {
+    
+    border-width: 0 5px 0 0; 
+}
+
+
+
+
+.par .chi:after {
+    
+    border-color: transparent #ddd transparent transparent; 
+    right: auto; 
+    left: -30px;
+}

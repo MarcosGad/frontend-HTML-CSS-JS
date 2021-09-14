@@ -1,0 +1,7 @@
+/*input:required {
+    background-color: #f00; 
+}*/
+
+input:optional { /* aly mash required */ 
+    background-color: #f00; 
+}

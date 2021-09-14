@@ -1,0 +1,25 @@
+div {
+    
+    width: 200px; 
+    height: 200px; 
+    background-color: #F00; 
+    color: #FFF; 
+    position: relative; /* 3ashn al 3nasr b3d kd mot7rka */ 
+    margin: 40px auto; /* mn fo2 20 w montsfa */ 
+}
+
+div:before { /* 2bla al div ah bostet content: "" */
+    content: ""; 
+    display: block; /* w da 3ashn al motsf7at al 2deda */ 
+    width: 0; 
+   /* border-width: 15px 15px 15px 15px; 
+    border-style: solid; 
+    border-color: #080 #00f  #080 #00f;*/
+    border-width: 0 15px 15px ; /* = 0 15px 15px 15px */ 
+    border-style: solid; 
+    border-color: #F00 transparent;/*=#F00 transparent #F00 transparent */
+    position: absolute; /* 3ashn n7rka al moslsa*/ 
+    top: -15px; 
+    left: 85px; 
+    
+}

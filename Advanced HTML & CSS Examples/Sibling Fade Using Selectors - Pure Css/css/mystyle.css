@@ -1,0 +1,27 @@
+body {
+
+	background-color: #777; 
+}
+
+.sibing-fade{
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%,-50%);
+	background-color: #ccc; 
+	padding: 2px 0; 
+}
+
+span {
+	padding: 20px;
+	font-size: 18px; 
+}
+
+.sibing-fade:hover span:not(:hover) {
+
+	color: #b3b3b3; 
+}
+
+
+
+

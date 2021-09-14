@@ -1,0 +1,48 @@
+.content {
+    
+    width: 285px; 
+    height: 420px; 
+    margin: auto; 
+}
+
+.ball {
+    
+    position: relative; 
+    background-image: url('../images/Black-Red_Egyptian_Soccer_ball.png'); 
+    width: 400px; 
+    height: 400px; 
+    margin-left: -100px;
+    background-size: cover; 
+    top: 0; 
+    animation: traslation 2s ease-in-out infinite; 
+}
+
+@keyframes traslation {
+    
+    50%{top:100px}
+    100%{top:0}
+}
+
+.ball-shadow {
+    
+    position: relative; 
+    width: 200px; 
+    height: 18px; 
+    background-color: #999; 
+    border-radius: 100%; 
+    top: 100px; 
+    margin: 0 0 0 0; 
+    opacity: .1;
+    animation: shadow 2s ease-in-out infinite; 
+}
+
+@keyframes shadow {
+
+    50%{margin: 0 5% 0 5%; 
+        opacity: .9;}
+    
+    100%{margin: 0 0 0 0; 
+        opacity: .1;}
+}
+
+

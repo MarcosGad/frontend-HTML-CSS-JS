@@ -1,0 +1,22 @@
+section {
+    height: 800px; 
+}
+
+#scroll-up {
+    width: 50px; 
+    height: 40px; 
+    padding-top: 10px; 
+    text-align: center;
+    position: fixed; /* 3ashn yfdla m3ia ana w tal3a w nazla */
+    right: 15px;
+    bottom: 15px; 
+    z-index: 9999; /* yb2a a2ola tb2a */ 
+   /* background: #777; */ 
+    cursor: pointer; 
+    display: none; /* 3ashn al jq ezhroa */ 
+    
+}
+
+/*#scroll-up:hover {
+    
+}*/ 

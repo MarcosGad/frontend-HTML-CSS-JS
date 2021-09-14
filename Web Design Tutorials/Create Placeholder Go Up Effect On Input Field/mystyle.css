@@ -1,0 +1,46 @@
+:focus {
+    
+    outline: none; 
+}
+
+.custom-input {
+    width: 400px; 
+    margin: 30px auto; 
+    position: relative; 
+    padding: 20px;
+}
+
+.custom-input label {
+  position: absolute; 
+  left: 30px;
+  top: 30px;
+  font-family: Tahoma, Arial;
+  color: #999; 
+  z-index: -1; 
+  transition: .3s ease-in-out; 
+}
+
+.custom-input input[type="text"] {
+    
+    height: 25px; 
+    padding: 5px 10px; 
+    background: transparent; 
+    border: 1px solid #dfdfdf; 
+}
+
+.custom-input input[type="text"]:focus + label {
+    
+    left: 20px;
+    top: 4px;
+    font-size: 10px;
+    color: #287a28; 
+    transition: .3s ease-in-out; 
+}
+
+.has-data label {
+    left: 20px;
+    top: 4px;
+    font-size: 10px;
+    color: #287a28; 
+    transition: .3s ease-in-out; 
+}

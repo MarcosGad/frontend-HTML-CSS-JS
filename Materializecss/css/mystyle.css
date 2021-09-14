@@ -1,0 +1,38 @@
+body{
+    height: 1000px; 
+}
+
+
+
+.parallax-container {   /* tzbeta al photo header 3ashn al serch */
+     /* position: absolute; */
+      width: 100%
+} 
+
+.para-text {
+   /* font-family: intro; */
+    color: #303030; 
+    text-align: center; 
+    padding-top: 130px; 
+}
+
+.line {
+    width: 200px; 
+    text-align: center; 
+    color: red; 
+    
+}
+
+.headline {
+    color: #303030; 
+    text-align: center; 
+}
+
+
+.carousel .carousel-item {
+    width: 300px; 
+}
+
+
+
+

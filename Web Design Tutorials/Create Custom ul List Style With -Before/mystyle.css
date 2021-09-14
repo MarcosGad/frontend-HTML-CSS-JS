@@ -1,0 +1,46 @@
+ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li {
+    
+    font-size: 18px; 
+}
+
+ul li:before { /* 2bla li ha7ot 7ga w content: "" hy ale b7ot fyha */ 
+    
+    content: "";
+    display: inline-block; 
+    width: 12px; 
+    height: 12px; 
+    margin-right: 6px; /* 3ashn al li yab3d 3an al text*/ 
+    margin-top: 6px; 
+   
+}
+
+ul li:first-child:before { /* 1 child 2blya t7ota .. */ 
+    
+    background-color: #F00; 
+    
+}
+
+ul li:nth-child(2):before { /* 2 child 2blya t7ota .. */ 
+    
+    background-color: #080; 
+    border-radius: 50%; /* al morb3a hyb2a dyra */ 
+}
+
+ul li:nth-child(3):before { /* 3 child 2blya t7ota .. */ 
+    
+    background-color: #00F; 
+    
+}
+
+ul li:last-child:before { /* 4 child 2blya t7ota .. */ 
+    
+    background-color: #FF0; 
+    border-radius: 50%; /* al morb3a hyb2a dyra */ 
+    
+}

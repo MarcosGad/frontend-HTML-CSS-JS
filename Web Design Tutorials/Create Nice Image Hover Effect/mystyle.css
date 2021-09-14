@@ -1,0 +1,25 @@
+.holder {
+    overflow: hidden; /* 3ashn mafsh 7ga t5rog bar al div w lo 5arga t5tfia */  
+    width: 300px; 
+    height: 200px; 
+    background-color: #EEE; 
+}
+
+.holder img {
+    width: 100%; /* w da 3ashn al sora tltzm b7gma al div */ 
+    height: 100%; 
+    -webkit-transition: all 1s ease-in-out; /* 3ashn al 7rka tkon asmoza */ 
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 1; 
+}
+
+.holder:hover img { /* y7sl ll img aly taly lma a3ml hover */ 
+    
+    -webkit-transform: scale(1.2) rotate(5deg);/* hmdad al img ad 7gmha 1.2 */ 
+    -moz-transform: scale(1.2) rotate(5deg);/* rotate 7rkt zoyta al img*/
+    -o-transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
+    opacity: 0.7; 
+}

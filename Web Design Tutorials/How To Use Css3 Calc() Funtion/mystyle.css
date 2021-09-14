@@ -1,0 +1,27 @@
+/* 
+
+syntax : calc(expression)
+
+*/
+
+
+.parent {
+    background-color: #080; 
+    overflow: hidden; 
+    padding: 20px 0; 
+}
+
+.one {
+    float: left;
+    width: 100px; 
+    background: #F00; 
+    color: #FFF; 
+}
+
+.two {
+    float: left;
+    width: calc(100% - 100px); /* w zalk lky e7sba al ms7a al b2ya fa parent w ymda al div 3lha w hna b2ol 100% msa7ta al parent na2sa msa7t al one // lo 7 div masl calc(100% / 7)  */ 
+    background: #00F; 
+    color: #FFF; 
+    
+}

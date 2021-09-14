@@ -1,0 +1,10 @@
+http://www.formvalidator.net/
+https://github.com/victorjonsson/jQuery-Form-Validator
+
+http://www.formvalidator.net/#default-validators
+http://www.formvalidator.net/#configuration
+http://www.formvalidator.net/#file-validators
+http://www.formvalidator.net/#security-validators
+http://www.formvalidator.net/#localization
+http://www.formvalidator.net/#default-validators_custom
+http://www.formvalidator.net/#configuration_callbacks

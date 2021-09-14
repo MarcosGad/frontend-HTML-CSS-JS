@@ -1,0 +1,7 @@
+http://fancybox.net/
+
+
+
+new:- 3
+
+https://github.com/fancyapps/fancybox

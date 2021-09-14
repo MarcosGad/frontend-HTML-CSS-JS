@@ -1,0 +1,55 @@
+https://www.bootstrapcdn.com/fontawesome/
+
+<!-- html(pug) -->
+-for (var i = 1; i < 10; i++)
+.z-checkbox
+ input(type="checkbox", name="", id="id-" + i)
+ label(for="id-" + i) CheckBox #{i}
+
+
+ <!-- Css(scss) -->
+
+ .z-checkbox {
+  margin: 20px; 
+  input[type="checkbox"]{
+    -webkit-appearance: none;
+    &:checked + label {
+      &:after {
+        transform: scale(1) rotate(0deg); 
+      }
+    }
+  }
+  label {
+    position: relative; 
+    cursor: pointer; 
+    padding-left: 30px; 
+    font-weight: bold; 
+    color: #555; 
+    &:before{
+      content: '';
+      width: 20px; 
+      height:20px; 
+      background-color:#eee; 
+      border: 1px solid #5a5a5a; 
+      position: absolute; 
+      left:0; 
+      top: -2px; 
+    }
+    &:after {
+      font-family: 'FontAwesome'; 
+      content: "\f00c"; 
+      position: absolute; 
+      top: -1px;
+      left: 0; 
+      width: 20px;
+      height: 20px; 
+      background-color: #e91e63; 
+      border: 1px solid #e91e63; 
+      color: #fff; 
+      font-size: 18px; 
+      text-align: center; 
+      transform: scale(0) rotate(360deg); 
+      transition: all .3s ease-in-out; 
+    }
+  }
+}

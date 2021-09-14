@@ -1,0 +1,31 @@
+.class-one h2 {
+    color: #080; 
+}
+
+.class-one p {
+    color: #080; 
+}
+
+.class-two h2 {
+    color: #f00; 
+}
+
+.class-two p {
+    color: #f00; 
+}
+
+.class-three h2 {
+    color: #00f; 
+}
+
+.class-three p {
+    color: #00f; 
+}
+
+.class-four h2 {
+    color: #ff0; 
+}
+
+.class-four p {
+    color: #f00; 
+}

@@ -1,0 +1,7 @@
+http://jquery-plugins.net/funnytext-js-create-funny-and-crazy-moving-texts
+https://github.com/alvarotrigo/funnyText.js
+
+
+ãÚáæãÉ ÇáÍÑßÉ ãÏÚã Èßá ÇáÇÈÔäÇÊ Úáí jq Çáí İí ÇáãæŞÚ 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

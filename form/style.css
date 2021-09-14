@@ -1,0 +1,9 @@
+fieldset { background: #fff;  border: 1px solid; padding: 20px;  margin: 20px auto;  width: 500px;  }
+body {background: #fff ;}
+legend{ background: #ccc ; border: 1px soild #ccc; padding: 5px;   }
+label{ margin-bottom: 5px; }
+input{margin-bottom: 5px;}
+input[type="text"], input[type="password"], textarea { padding:4px; width: 300px; display: block; }
+hr{ border: 3px solid   #EEE }
+select { padding: 2px  }
+textarea{ height:100px; margin-bottom: 10px; }

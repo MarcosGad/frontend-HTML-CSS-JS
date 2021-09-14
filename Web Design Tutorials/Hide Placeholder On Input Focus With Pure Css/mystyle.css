@@ -1,0 +1,33 @@
+:focus { /* ay focus */ 
+    
+    outline: none; 
+}
+
+
+:focus::-webkit-input-placeholder { /* chorme - opera  - safari */ 
+    
+    /*opacity: 0; ya5fa */
+    /*color : transparent; ya5fa */ 
+    
+     opacity: 0; 
+     -webkit-transition: opacity .4s ease-in-out; 
+     -moz-transition: opacity .4s ease-in-out;
+     -o-transition: opacity .4s ease-in-out;
+     transition: opacity .4s ease-in-out;
+    
+}
+
+.classname::-moz-input-placeholder { /* firefox 19+ */ 
+    
+    
+}
+
+::-ms-input-placeholder { /* IE 10+ */
+    
+    
+}
+
+:-moz-input-placeholder { /* firefox 18- */ 
+    
+    
+}

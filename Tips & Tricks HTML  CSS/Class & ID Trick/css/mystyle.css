@@ -1,0 +1,17 @@
+/*.x {
+    color: #f00; 
+}*/
+
+/*#y {
+    color: #f00; 
+}*/
+
+/* .x#y {  hta al 3nasr aly wa5da class x and id y = #y.x 
+    
+    color: #f00; 
+    
+} */
+
+#y .x {   /* hta al 3nasr al class x almogwod da5la al id y */ 
+    color: #f00; 
+}

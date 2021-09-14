@@ -1,0 +1,89 @@
+/* 2- (inline) -- multiple lines -> padding or table or vertical-align:middle */ 
+
+/*
+
+table { /* ho al table aotomtic fa al center al r2sia 
+    width: 100px; 
+    height: 200px; 
+    background-color: #000; 
+    color: #fff; 
+}
+
+div {
+    display: table;
+    margin-top: 50px;
+    width: 100px; 
+    height: 200px; 
+    background-color: #000; 
+    color: #fff; 
+}
+
+p {
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+*/
+
+
+/* 2- (inline) -- multiple lines -> flex */ 
+
+/*
+
+div {
+    width: 100px; 
+    height: 300px; 
+    padding: 20px 0; 
+    background-color: #080;
+    color: #fff; 
+    
+    display: flex; 
+    flex-direction: column;  /* row  
+    justify-content: center; 
+}
+
+*/
+
+
+/* 2- (inline) -- multiple lines -> ghost -> element not explain */ 
+
+div {
+    width: 200px; 
+    height: 250px; 
+    background-color: #080; 
+    color: #fff; 
+}
+
+div:before {
+    content: ""; 
+    height: 100%; 
+    
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+p{
+    color: #fff; 
+    width: 100px; 
+    padding: 10px;
+    background-color: #00f; 
+    
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

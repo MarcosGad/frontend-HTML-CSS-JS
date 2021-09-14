@@ -1,0 +1,50 @@
+div {
+    width: 200px; 
+    height: 100px; 
+    background-color: #DDD; 
+    margin: 40px auto; 
+    position: relative; /* al 3nasr htb2a relative yb2 bardo al 2ab kd */
+    overflow: hidden; /* 3ashn al box-shadow */ 
+    
+}
+
+div:after { /* nd3a b3d al div 7ga fa al content: "" */
+    
+    content: ""; 
+    display: block; /* ltgnob mashkl f al motsf7at al 2dima w inline*/ 
+    border-width: 0  20px  20px 0; /* nbd2a b3ml moslsa */ 
+    border-style: solid; 
+    border-color: #F00 transparent #F00 transparent; /* w g3lna al roan shfaf transparent 7ta ytam zhora shkla al paper */ 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    
+}
+
+div:before { /* nd3a b3d al div 7ga fa al content: "" */
+    
+    content: ""; 
+    display: block; /* ltgnob mashkl f al motsf7at al 2dima w inline*/ 
+    border-width: 0  20px  20px 0; /* nbd2a b3ml moslsa */ 
+    border-style: solid; 
+    border-color: #F00 #FFF #F00 #FFF; /* w a5tlaf 3n fo2a b7ota loan al mok3a mkan alon al shfaf */ 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    -webkit-box-shadow: -2px 2px 7px #9E9E9E; /* l7senal al peper */ 
+    -moz-box-shadow: -2px 2px 7px #9E9E9E;
+    -o-box-shadow: -2px 2px 7px #9E9E9E;
+    box-shadow: -2px 2px 7px #9E9E9E;
+    
+
+}
+
+div:after,div:before { /* a5sar al code */ 
+    content: ""; 
+    display: block; /* ltgnob mashkl f al motsf7at al 2dima w inline*/ 
+    border-width: 0  20px  20px 0; /* nbd2a b3ml moslsa */ 
+    border-style: solid;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+}*/

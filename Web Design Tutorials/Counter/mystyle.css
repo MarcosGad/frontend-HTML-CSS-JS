@@ -1,0 +1,45 @@
+/* 
+Counter 
+*/ 
+
+
+
+body{
+    
+    counter-reset: elzero-counter one-counter 4; /* 2oln name counter, bdyta al number aldifoult (0) momkn ebd2 mn al rakm aly a7dado (2) momkn kima salb (-2) */
+}
+
+ul{
+    
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li:before{
+    
+    counter-increment: elzero-counter;   /* (al3dad) 2oln name counter, mkdar al 3ad so2 (1) 2 3 4 aw zoga(2) 2 4 6 aw(10) 10 20 30 aw(-1) -2 -3 */  
+    content: counter(elzero-counter);  
+    /*
+    content: "ID " counter(elzero-counter); 
+    content: counter(elzero-counter, upper-roman);
+    content: counter(elzero-counter, lower-roman);
+    content: counter(elzero-counter, upper-alpha);
+    */
+    display: inline-block; 
+    width: 20px; 
+    height: 20px; 
+    background-color: #f00; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.test div:before {
+    
+    counter-increment: one-counter;
+    content: counter(one-counter);  
+}
+

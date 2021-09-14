@@ -1,0 +1,69 @@
+body{
+    background-color: #333; 
+    font-family: Tahoma, Arial; 
+}
+
+.image {
+    width: 400px; 
+    height: 250px; 
+    margin: 20px auto; 
+    color: #fff; 
+    position: relative; /* 3ashn al 7gat aly gwah f almotlka */ 
+}
+
+
+img {
+    transition: .3s; 
+}
+
+.image img:hover {
+    opacity: .1; 
+}
+
+.image h3,
+.image span {
+    position: absolute; 
+    opacity: 0; /* hy5fyhom */ 
+}
+
+.image h3 {
+    
+    top : 10px; 
+    left: 10px;
+    margin: 0; 
+}
+
+.image .date {
+    
+    left: 10px; 
+    bottom: 10px; 
+}
+
+.image .views {
+    
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.image:hover h3,
+.image:hover span {
+    opacity: 1; 
+}
+
+.image:hover h3 {
+    
+    transition-delay: .45s; 
+    transition-duration: 1s;
+}
+
+.image:hover .date {
+    
+     transition-delay: .65s;
+     transition-duration: 1s;
+}
+
+.image:hover .views {
+    
+     transition-delay: .85s;
+     transition-duration: 1s;
+}

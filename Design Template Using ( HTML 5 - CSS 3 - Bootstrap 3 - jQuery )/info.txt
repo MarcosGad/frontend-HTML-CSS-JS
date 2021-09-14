@@ -1,0 +1,22 @@
+lg md sm  xs
+
+class="col-md-3" ->  lg =3 and md =3 
+
+col-xs-12 -> sm = 12 and xs = 12 
+
+»„⁄‰Ì «‰ «·„ﬁ«” «·Ì »ﬂ »Â »Ì«Œœ «·«⁄„œ… ÊÂÊ Ê·Ì ﬁ»·Â ·Ê „ﬂ » ‘ «·„ﬁ«” «·Ì ﬁ»·Â 
+
+
+
+https://github.com/mhuggins/jquery-countTo
+
+https://owlcarousel2.github.io/OwlCarousel2/
+https://github.com/OwlCarousel2/OwlCarousel2
+https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
+
+http://dimsemenov.com/plugins/magnific-popup/
+http://dimsemenov.com/plugins/magnific-popup/documentation.html
+https://github.com/dimsemenov/Magnific-Popup
+
+http://kenwheeler.github.io/slick/
+https://github.com/kenwheeler/slick/

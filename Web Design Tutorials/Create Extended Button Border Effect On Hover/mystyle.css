@@ -1,0 +1,42 @@
+body{
+    background-color: #333; 
+}
+
+a{
+    display: inline-block; 
+    width: 120px;
+    padding: 10px;
+    color: #fff; 
+    text-decoration: none; 
+    background-color: #3992a4;
+    text-align: center; 
+    position: relative; 
+    margin: 20px;
+}
+
+a:before,
+a:after {
+    content: ''; 
+    position: absolute; 
+    width: 20px; 
+    height:3px;
+    background-color: inherit; /* ya5oda al lon mn al 2ba */ 
+    transition: .4s;
+    
+}
+
+a:before {
+    left: 0; 
+    top:-5px;
+    
+}
+
+a:after {
+    right: 0; 
+    bottom: -5px;
+}
+
+a:hover:before,
+a:hover:after{
+    width: 100%; 
+}

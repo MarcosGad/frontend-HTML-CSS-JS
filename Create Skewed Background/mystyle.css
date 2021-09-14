@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.cl1 {
+    width: 100%;
+    height: 200px; 
+    background-color: #333132; 
+    position: relative; 
+}
+
+.cl2 {
+    width: 100%; 
+    height: 500px; 
+    background-color: darkgoldenrod; 
+    position: relative; 
+}
+
+.cl2:before {
+    content: ''; 
+    width: 50%; 
+    height: 100px; 
+    background-color: #333132; 
+    position: absolute; 
+    top:-48px;
+    left: 0; 
+    transform: skewY(8deg); 
+}
+
+.cl2:after {
+    content: ''; 
+    width: 50%; 
+    height: 100px; 
+    background-color: #333132; 
+    position: absolute; 
+    top:-48px;
+    right: 0; 
+    transform: skewY(-8deg); 
+}

@@ -1,0 +1,51 @@
+<!--
+  https://github.com/axios/axios
+  https://cdnjs.com/
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+      <div id="elzero-app" class="container">
+        <input type="text" v-model="username">
+        <button @click="getRepos">Get Repos</button>
+        <div v-for="repo in repos">
+          <h4>{{ repo.name }}</h4>
+          <p>{{ repo.description }}</p>
+        </div>
+      </div>
+      <script src="js/vue.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.js"></script>
+      <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+              username: null,
+              repos: null
+            },
+            methods: {
+              getRepos: function () {
+                /*
+                  [1] Get Data From API 
+                  [2] Return The Response
+                  [3] Carch Error
+                */
+                return axios.get(
+                  //'https://api.github.com/users/' + this.username + '/repos'
+                    `https://api.github.com/users/${this.username}/repos`
+                ).then(response => {
+                  this.repos = response.data
+                }).catch(error => {
+                  console.log(error);
+                });
+              }
+            }
+        }); 
+      </script>
+  </body>
+</html>

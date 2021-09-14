@@ -1,0 +1,62 @@
+body {
+    
+    background-color: #666; 
+    color: #666; 
+    font-family: sans-serif; 
+}
+
+article {
+    
+    width: 548px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    position: relative; 
+    background-color: #fcf69d;
+    background: -webkit-linear-gradient(top , #81cbbc , #fcf59b 2%); 
+    background-size: 100% 40px;
+}
+
+article:before , article:after {
+    
+    content: "";
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; /* 3ashn yazhra wra */    
+}
+
+
+article:before {
+    
+    background-color: #fcf69d;
+    transform: rotate(4deg); 
+}
+
+article:after {
+    
+    background-color: #fcf69d;
+    transform: rotate(-4deg); 
+}
+
+
+p{
+    
+    line-height: 2.4em; 
+    margin-bottom: 50px; 
+}
+
+article:focus{
+    
+    color: #000;
+    outline: 0; 
+}
+
+article:focus:before,
+article:focus:after{
+    
+    transform: rotate(0deg); 
+}
+
+

@@ -1,0 +1,44 @@
+.top-header {
+    height: 200px; 
+    background-color: black;
+    position: relative; 
+}
+
+.header {
+    width: 500px; 
+    height: 450px; 
+    background-color: #fff; 
+    position: absolute; 
+    top:120px; 
+    right: 410px; 
+    border: 2px solid #000; 
+    border-radius: 5%; 
+}
+
+.header h1{
+    text-align: center; 
+   /* font-family: intro; */
+}
+
+
+.header form{
+    max-width: 300px; 
+    margin: auto;
+    margin-top: 50px; 
+}
+
+.header form input{
+    margin-bottom: 13px;  
+}
+
+.header .signup {
+    display: none; 
+}
+
+.header .active{
+    color: #3498db; 
+}
+
+.header h1 {
+    cursor: pointer; 
+}

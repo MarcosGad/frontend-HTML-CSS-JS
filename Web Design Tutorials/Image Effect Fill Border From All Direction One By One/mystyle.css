@@ -1,0 +1,113 @@
+body {
+    background-color: #333; 
+}
+
+.image-all-together {
+    width: 400px; 
+    height: 250px; 
+    margin: 20px auto; 
+    color: #fff; 
+    position: relative; 
+}
+
+.image-all-together span {
+    
+    position: absolute; 
+    background-color: orange;
+    transition: .3s; 
+}
+
+.image-all-together .one {
+    
+    left: 0; 
+    top: 0; 
+    width: 3px;
+    /*height: 100%; */
+    height: 0; 
+}
+
+.image-all-together .two {
+    
+    left: 0;
+    bottom: 0; 
+    height: 3px; 
+    /*width: 100%; */
+    width: 0; 
+}
+
+.image-all-together .three {
+    bottom: 0; 
+    right: 0; 
+    width: 3px;
+    /*height: 100%; */
+    height: 0; 
+    
+}
+
+.image-all-together .four {
+    top: 0; 
+    right: 0; 
+    height: 3px; 
+    /*width: 100%;*/
+    width: 0; 
+    
+}
+
+.image-all-together:hover .one,
+.image-all-together:hover .three {
+    
+    height: 100%; 
+}
+
+.image-all-together:hover .two,
+.image-all-together:hover .four {
+    
+    width: 100%; 
+}
+
+
+
+
+.image-all-together .two {
+    
+    transition-delay: .3s; 
+}
+
+.image-all-together .three {
+   
+   transition-delay: .6s; 
+    
+}
+
+.image-all-together .four {
+
+    transition-delay: .9s; 
+}
+
+
+.image-all-together:hover img {
+    
+    transition-delay: 1.2s;
+    transition-duration: .3s; 
+    opacity: .1; 
+}
+
+.image-all-together h3 {
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    font-size: 30px; 
+    font-family: Tahoma, Arial; 
+    font-weight: bold; 
+    opacity: 0; 
+}
+
+
+.image-all-together:hover h3 {
+    
+    transition-delay: 1.5s;
+    transition-duration: .3s; 
+    opacity: 1; 
+}

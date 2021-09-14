@@ -1,0 +1,30 @@
+.container {
+    background-color: gray; 
+    height: 300px; 
+    display: flex; /* w hna yg3la al  da5la al container bganb b3da */ 
+    justify-content: center; /* w hya tg3la al 3nasr fa al nosa */ 
+    align-items: center; /* w hya tg3la al 3nasr f montsf al page mn kol al atghat */ 
+}
+
+.text {
+    width: 30%; 
+}
+
+.one {
+    color: #f00; 
+    order: 1; /* w ho ltrteb al 3nasr */
+}
+
+.two {
+    order: 3; 
+}
+
+.three{
+    color: orange; 
+    order: 2; 
+}
+
+@media (max-width:400px;){
+    
+    
+}

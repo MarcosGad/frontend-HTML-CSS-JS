@@ -1,0 +1,32 @@
+.holder {
+    width: 964px; 
+    height: 964px; 
+    margin: 20px auto; 
+    text-align: center; 
+    position: relative; /* 3ashn a5la preview fa al wd3a al motlka */ 
+    background-image: url("imac-transp.png")
+}
+
+.holder .preview {
+    position: absolute;  /* hna bn3ml al kaim w n7dad mkan al div al2zr2a fa al shasha */ 
+    top : 38px; 
+    left: 36px; 
+    width: 892px; 
+    height: 510px; 
+    /*background-color: #00F; w da la text 3ashn a3rfa a7dad al kaim */
+    overflow: hidden; /* 3ashn footer al mok3a mezhrsha */ 
+  
+    
+}
+
+.holder .preview img { /* w hna a3rda al mok3a kolo */ 
+    margin-top: 0; 
+    -webkit-transition: all 8s ease-in-out; 
+    -moz-transition: all 8s ease-in-out; 
+    -o-transition: all 8s ease-in-out; 
+    transition: all 8s ease-in-out; 
+}
+
+.holder .preview:hover img {
+    margin-top: -2000px; /* ba - 3ashn nbd2a nshofa al mok3a w n7rko w bktba al kima mn hight al img  w w al hdfa agyba mo25rt al mok3a*/ 
+}

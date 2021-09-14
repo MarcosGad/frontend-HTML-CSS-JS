@@ -1,0 +1,52 @@
+body {
+    height:  1500px; 
+}
+
+
+/* overlay div */ 
+
+.overlay {
+    width: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+    position: fixed; /* 3ashn emla al page kolha */ 
+    top: 0; 
+    left: 0; 
+    height: 100%; /* % = vh */ 
+    
+    transform: scale(0); /* hide the div */ 
+    transition: 0.5s 
+    
+}
+
+/* content */  
+
+.content {
+    text-align: center; 
+    position: relative; 
+    top: 25%; 
+    margin-top: 4%; 
+}
+
+/* a */
+
+a {
+    text-decoration: none; 
+    color: #fff; 
+    display: block; 
+    font-size: 30px; 
+    margin-bottom: 2%;
+    
+}
+
+/* close button */ 
+
+.overlay .close {
+    position: absolute; 
+    right: 35px; 
+    top: 25px; 
+    font-size: 60px; 
+}
+
+span {
+    position: fixed; 
+}

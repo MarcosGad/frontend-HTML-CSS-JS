@@ -1,0 +1,98 @@
+body {
+    
+    font-family: sans-serif; 
+    padding: 20px;
+}
+
+.part1 img {
+    width: 500px;
+    position: relative; 
+    left: 50px; 
+}
+
+.part2 img {
+    width: 500px;
+    position: relative; 
+    right: 50px;
+}
+
+
+.part2 p {
+    font-size: 15px; 
+    width: 350px; 
+    border-right: 9px solid #080; 
+    padding: 22px; 
+}
+
+
+.part1 p {
+    font-size: 15px; 
+    width: 350px; 
+    border-left: 9px solid #080; 
+    padding: 22px; 
+}
+
+.info1 , .info2 {
+    
+    margin-top: 20px; 
+}
+
+.info1 .info-part1 {
+    
+    width: 20%; 
+    float: left; 
+    text-align:center; 
+}
+
+.info1 .info-part1 ul {
+    
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    height: 200px; 
+    background-color: #080; 
+    color: #fff; 
+}
+
+.info1 .info-part1 ul li {
+    
+    padding: 15px; 
+}
+
+.info1 .info-part2 {
+    
+    width: 80%; 
+    float: left; 
+    position: relative; 
+    top: 20px; 
+}
+
+.info1 .info-part2 p {
+    
+    border: 1px solid #f50; 
+    height: auto; 
+}
+
+.info1 .info-part2 p span {
+    
+    display: block; 
+    padding: 3px; 
+}
+
+.info1 .info-part2 p span.span {
+    
+    background-color: #f50; 
+    color: #fff; 
+}
+
+.info2 button {
+    
+    background-color: #080; 
+    border: 1px solid #f50; 
+    width: 150px; 
+    padding: 15px; 
+    color: #fff; 
+    font-size: 20px; 
+    margin-top: 100px; 
+    margin-left: 100px; 
+}

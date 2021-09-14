@@ -1,0 +1,44 @@
+.comments {
+   /* background-color: #EEE; */ 
+    margin: 100px auto; /* 100 mn fo2 then monzsfa */ 
+    width: 600px; 
+    border-left: 2px solid #CCC; 
+    padding: 0 20px 0 30px; 
+    
+}
+
+p{
+    background-color: #FFF; 
+    padding: 10px; 
+    font-size: 16px; 
+    font-family: Tahoma, Arial; 
+    border: 1px solid #CCC; 
+    line-height: 1.7; 
+    position: relative; /* 3ashn al 3nasra htb2a mot7rka */ 
+}
+
+p:before { /* nkom b3ml al dyra aly htkon 3la al timeline*/
+    content: ""; /* al 7ga aly htkon 2bla al 3onsor */  
+    display: block; /* 3ashn al motcf7at al 2dima */ 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; /* dyra */
+    background-color: #2c3e50; 
+    border: 3px solid #CCC;
+    position: absolute; /* 3ashn a7rka w a7dad mkan al dyra */ 
+    top : 10px;
+    left: -40px; 
+}
+
+p:after { /* nkom b3mla al s7ma */ 
+    
+    content: ""; 
+    width: 0; 
+    height: 0; 
+    border-width: 8px; /* nbd2a b3ml moslsa */ 
+    border-style: solid; 
+    border-color: transparent #CCC  transparent  transparent; 
+    position: absolute; /* nkom bt7ded mkan al moslsa */ 
+    left: -17px; 
+    top : 10px; 
+}

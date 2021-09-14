@@ -1,0 +1,54 @@
+.content {
+    
+    width: 500px; 
+    margin: auto; 
+}
+
+.content input {
+    
+    display: none; 
+    
+}
+
+.content label {
+    
+    height: 15px;
+    line-height: 15px; /* center */ 
+    display: block; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    cursor: pointer; 
+}
+
+.content section {
+    
+    height: 0; 
+    overflow: hidden; /* 3ashn ay 7ga bar t5tfa */ 
+    background-color: #bbb; 
+    color: #222; 
+    padding-left:10px; 
+    transition: height 0.3s ease-in-out;
+    
+}
+
+.content input:checked ~ section {
+    
+    transition: height 0.3s ease-in-out; 
+}
+
+
+.content input:checked ~ section.acc1 {
+    
+    height: 150px; 
+}
+
+.content input:checked ~ section.acc2 {
+    
+    height: 150px; 
+}
+
+.content input:checked ~ section.acc3 {
+    
+    height: 150px; 
+}

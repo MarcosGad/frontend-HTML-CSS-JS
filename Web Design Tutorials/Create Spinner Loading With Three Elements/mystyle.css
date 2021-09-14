@@ -1,0 +1,62 @@
+body {
+    
+    background-color: #333; 
+}
+
+.spinner {
+    margin: 100px;
+    position: relative; 
+}
+
+.spinner .circle {
+ 
+    border-radius: 50px; 
+    border: 3px solid transparent; 
+    border-top-color: #fff; 
+    animation: rotate 1s linear infinite; 
+    position: absolute; 
+}
+
+.spinner .circle.one {
+       
+    width: 50px; 
+    height: 50px; 
+    left: 50px; 
+    top: 50px; 
+    animation-duration: .85s; 
+    
+}
+
+.spinner .circle.two {
+       
+    width: 75px; 
+    height: 75px; 
+    left: 38px; 
+    top: 38px;
+    animation-duration: .95s; 
+    
+    
+}
+
+.spinner .circle.three {
+       
+    width: 100px; 
+    height: 100px;
+    left: 25px; 
+    top: 25px;
+    animation-duration: 1.05s; 
+    
+}
+
+@keyframes rotate {
+    
+    from {
+        
+        transform: rotate(0deg); 
+    }
+    
+    to {
+        
+        transform: rotate(360deg); 
+    }
+}

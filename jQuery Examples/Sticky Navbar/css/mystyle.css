@@ -1,0 +1,40 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    height: 1500px; 
+}
+
+div.container {
+    width: 600px; 
+    margin: auto; 
+}
+
+nav ul {
+    display: flex; /* li gnba b3da */
+}
+
+nav ul li {
+    list-style: none; 
+    background-color: #d0825b; 
+    text-align: center; 
+}
+
+nav ul li a {
+    color: #FFF; 
+    display: inline-block;
+    width: 78px; 
+    padding: 10px; 
+    border-right: 2px solid #000; 
+    text-decoration: none; 
+}
+
+.fixed {
+    position: fixed; 
+    top:0; 
+    width: 600px; 
+    margin: auto; 
+   /* display: none; /* al try2a al tany */ 
+}

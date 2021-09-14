@@ -1,0 +1,21 @@
+h2{
+    padding-left: 50px; 
+    padding-top: 50px; 
+}
+
+hr{
+    border: 1px solid #303030; 
+    position: absolute; 
+    left: 50px; 
+    width: 350px;
+}
+
+.new {
+   border: 1px solid #f00; 
+   position: absolute;
+   left: 50px; 
+   width: 150px; 
+
+}
+
+

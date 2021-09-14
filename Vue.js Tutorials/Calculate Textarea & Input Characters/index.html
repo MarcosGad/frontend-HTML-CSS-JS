@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+      <div id="elzero-app" class="container">
+        <h4>Write Your Message ( {{ maxLength }} Characters Allowed )</h4>
+        <textarea @input="countChars" v-model="message" :maxlength="maxLength"></textarea>
+        <span class="counter" :class="{'zero' : reachZero}">
+          Left | <span>{{ remainingChars }}</span>
+        </span>
+      </div>
+      <script src="js/vue.js"></script>
+      <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+              maxLength: 20,
+              remainingChars: 20,
+              message: null,
+              reachZero: false
+            },
+            methods: {
+              countChars: function () {
+                this.remainingChars = this.maxLength - this.message.length;
+                this.reachZero = this.remainingChars === 0;
+                console.log(this.reachZero); 
+              }
+            }
+        }); 
+      </script>
+  </body>
+</html>

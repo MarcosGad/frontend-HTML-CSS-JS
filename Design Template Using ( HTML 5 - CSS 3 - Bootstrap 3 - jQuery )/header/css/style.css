@@ -1,0 +1,138 @@
+/* General style */
+body {
+    font-family: lucida sans; 
+}
+
+.sections {
+    
+    padding: 20px 0; 
+}
+/* ba */ 
+
+.overlay {
+    position: absolute; 
+    top: 0; /* 0 = w and h 100% */ 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.6); 
+}
+
+
+/* header */
+
+header {
+    height: auto; /* 3la ad al m7toa */ 
+    padding: 10px 0; /* fo2 w t7ta and yman w shmal */ 
+    border-bottom: 1px solid #000; 
+    position: relative; /* 3asn al child hykon absolute */
+}
+
+header i.icon {
+    position: absolute; 
+    right: 30px; 
+    top: 32px; 
+    cursor: pointer; 
+    z-index: 10; 
+    display: none; /* 3ashn yzhra f al screen aly a7dadha */ 
+}
+
+header .logo h2 {
+    font-size: 30px; 
+    
+}
+
+header nav .nav-list {
+    list-style: none; 
+    margin-bottom: 0; 
+    display: flex; /* li gnba b3da  */ 
+    justify-content: space-around; /* space between li */ 
+}
+
+/*header nav .nav-list .list {
+    display: inline-block; /* li gnba b3da 
+}*/ 
+
+header nav .nav-list .list a {
+    /*background: #000; 
+    color: #fff; */
+    display: block; 
+    padding: 15px 0; 
+    margin: 9px 0; 
+    color: #000; 
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; 
+}
+
+header nav .nav-list .list a:hover {
+    color: #7cb62f; 
+}
+
+
+@media (max-width:575px) {
+    
+    header nav .nav-list {
+        /*display: block; /* al screen sm bl9ya al flex */ 
+        text-align: center; 
+        padding: 0; 
+        display: none; /* a5fa al li 3ashn lma a3mla click 3la icon yazhra bla js */ 
+    }
+    
+    header .logo {
+        text-align: center; 
+    }
+    
+    header i.icon {
+        display: block; /* 3ashn yazhra */ 
+    }
+    
+    
+}
+
+
+/* home section */ 
+
+.home {
+    height: 500px; 
+    background-image: url(../images/home/ws_Colorado_Road_1680x1050.jpg);
+    background-size: cover; 
+    background-position: center; 
+    position: relative; /* 3ashn al overlay */    
+}
+
+.home .home-content { /* content center fkraaa gdedaaa*/ 
+   
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+}
+
+.home .home-title {
+    color: #fff; 
+    font-size: 45px; 
+    margin-bottom: 20px; 
+}
+
+.home .home-desc {
+    
+    color: #fff; 
+    font-size: 20px; 
+}
+
+.home .button {
+    background-color: #7cb62f; 
+    color: #fff; 
+    width: 150px; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+
+
+
+
+
+
+
+

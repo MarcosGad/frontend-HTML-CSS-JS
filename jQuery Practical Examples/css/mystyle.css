@@ -1,0 +1,1125 @@
+/* start global */
+
+*{
+    margin: 0; 
+    padding: 0; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, Arial; 
+}
+
+.scroll-to-top {
+    
+    background-color: #333; 
+    color: #fff; 
+    display: block; 
+    padding: 0 5px 3px; 
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px; 
+    display: none; 
+}
+
+
+
+
+ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/*end global */
+
+
+/*  start header */
+
+.navbar {
+    list-style: none;
+    margin: 0; 
+    padding: 5px; 
+    background-color: rgba(0, 0, 0, .7); 
+    text-align: center;
+    position: fixed;
+    top:0; 
+    left: 0; 
+    width: 100%; 
+    
+}
+
+.navbar li {
+    display: inline-block; 
+    padding: 15px; 
+    
+}
+
+.navbar li a {
+    color: #EEE;
+    text-decoration: none; 
+}
+
+
+/* .navbar li.active a {
+    
+    color: #ffea00; 
+} */ 
+
+
+.navbar li a.active {
+    
+    color: #ffea00;
+}
+
+
+
+/*  end header */
+
+
+/* start sections */ 
+
+
+.block {
+    min-height: 1200px;
+    background-color: #EEE; 
+    margin-bottom: 20px; 
+    padding: 65px 0; 
+    
+}
+
+.block h2 {
+     text-align: center;
+}
+
+
+/* end sections */
+
+
+/* start popup */
+
+.popup {
+    
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 9999; 
+    background-color: rgba(187,187,187, 0.8); 
+    display: none; 
+    
+}
+
+.popup .inner {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    width: 300px; 
+    height: 250px; 
+    left: 50%; 
+    position: fixed; 
+    margin-left: -150px; 
+    top: 50%; 
+    margin-top: -125px; 
+    border-radius: 5px; 
+    
+}
+
+.popup .inner h2 {
+    
+    color: #777; 
+    margin: 0 0 10px; 
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 10px; 
+}
+
+.popup .inner p {
+    color: #aaa; 
+    line-height: 1.6; 
+}
+
+.popup .inner button {
+    
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    padding: 2px 8px; 
+    background-color: #eee; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.show-popup {
+    
+    cursor: pointer; 
+    display: inline-block; 
+    text-align: center; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+    margin: 20px; 
+    background-color: #fff; 
+    width: 140px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-weight: bold;
+    color: #928440; 
+}
+
+/* end popup */ 
+
+
+/* start buttons with effects */ 
+
+.buttons-effect {
+    
+    cursor: pointer; 
+    display: inline-block; 
+    text-align: center; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+    width: 140px; 
+    padding: 10px;  
+    border-radius: 10px; 
+    font-weight: bold;
+    color: #fff; 
+    border: none; 
+    position: relative;
+    overflow: hidden;  /* 3ashn ytshal ay 7ofa zeda */ 
+}
+
+.buttons-effect.from-left {
+    
+     background-color: #c0392b;
+    
+}
+
+.buttons-effect.from-top {
+    
+    background-color: #2980b9; 
+}
+
+
+.border-left {
+    border-radius: 0; 
+    background-color: #fff; 
+    color: #2980b9; 
+    overflow: visible; 
+}
+
+.border-top {
+    border-radius: 0; 
+    background-color: #fff; 
+    color: #2980b9; 
+    overflow: visible; 
+}
+
+
+.buttons-effect span:first-child { /* ay 3onsra m3a al 2 class */ 
+    
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    display: block; 
+    z-index: 1; 
+}
+
+
+.buttons-effect span:last-child {
+    
+    position: relative; 
+    z-index: 2; 
+}
+
+
+
+
+.buttons-effect.from-left span:first-child {
+    
+    background-color: #e74c3c; 
+    width: 0; /* mogwd bs mash byn */ 
+    height: 100%; 
+}
+
+.buttons-effect.from-top span:first-child {
+    
+    background-color: #3498db; 
+    width: 100%;  
+    height: 0; 
+}
+
+.border-left span:first-child {
+    
+    background-color: #2980b9; 
+    width: 0; 
+    height: 3px; 
+    top:auto; 
+    bottom: -3px; /* 3ashn al border ykon mn bra */
+}
+
+.border-top span:first-child {
+    
+    background-color: #2980b9; 
+    width: 3px; 
+    height: 0; 
+    left: -3px; /* 3ashn al border ykon mn bra */
+}
+
+.bounce {
+    background-color: #a00202; 
+    margin-top: 30px; 
+    position: relative; /* 3ashn t7rka al btn */ 
+}
+
+
+/* end buttons with effects */  
+
+/* start progress bar */ 
+
+.animated-progress {
+    
+    width: 300px; 
+    height: 30px; 
+    border-radius: 5px; 
+    margin: 20px 10px; 
+    border: 1px solid #ccc; 
+    background-color: #f6f6f6; 
+    overflow: hidden; /* 3ashn yzal 7ofa al span */ 
+}
+
+.animated-progress span {
+    /*width: 30%; */
+    width: 0; 
+    height: 100%; 
+    display: block; 
+    color: #fff; 
+    line-height: 30px; 
+    text-indent: 1px; /* eb3da 3n al 7fa kam */ 
+}
+
+.progress-blue span { 
+    background-color: #3498db; 
+}
+
+.progress-red span { 
+    background-color: #e74c3c; 
+}
+
+/* end progress bar */ 
+
+/* start fixed menu */ 
+
+.fixed-menu {
+    
+    background-color: #333; 
+    color: #eee; 
+    padding: 10px; 
+    position: fixed; 
+    left: -220px; /* al menu htatl3 bar al shasha bdla x display: none */ 
+    top: 0; 
+    height: 100%; 
+    width: 220px; 
+    z-index: 9999; /* fo2 kol al tb2at */ 
+     
+}
+
+.fixed-menu .fa-gear {
+    
+    position: absolute; 
+    right: -30px; 
+    top: 90px; 
+    background-color: #333; 
+    width: 30px; 
+    height: 30px; 
+    line-height: 30px; 
+    text-align: center; 
+    border-radius: 0 10px 10px 0; 
+    cursor: pointer; 
+    
+}
+
+.fixed-menu .change-colors li {
+    
+    width: 25px; 
+    height: 25px; 
+    display: inline-block; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    
+}
+
+.fixed-menu .change-colors [data-color="blue"] {
+    
+    background-color: #3498bd; 
+}
+
+.fixed-menu .change-colors [data-color="red"] {
+    
+    background-color: #e74c3c; 
+}
+
+.fixed-menu .change-colors [data-color="green"] {
+    
+    background-color: #16a085; 
+}
+
+.fixed-menu .change-colors [data-color="purple"] {
+    
+    background-color: #8e44ad; 
+}
+
+
+/* end fixed menu */ 
+
+
+/* start gallery */ 
+
+.gallery {
+    
+    width: 800px; 
+    margin: auto; 
+    border: 1px solid #ccc; 
+    padding: 3px; 
+    background-color: #fff; 
+}
+
+.gallery img {
+    
+    max-width: 100%; /* al img mt5rgsha mn al div */ 
+}
+
+.gallery .master-img {
+    
+    height: 551px; 
+    position: relative; /* 3ashn al icon */ 
+}
+
+.gallery .master-img i {
+    
+    padding: 10px; 
+    position: absolute; 
+    top: 0; 
+    cursor: pointer; 
+    z-index: 2; 
+}
+
+.gallery .master-img .fa-chevron-left{
+    
+    left: 0
+     
+}
+
+.gallery .master-img .fa-chevron-right{
+    
+    right: 0
+     
+}
+
+
+.gallery .thumbnails {
+    overflow: hidden; /* 3ashn al float */   
+}
+
+.gallery .thumbnails img {
+    
+    /*width: 19.6%;  gbtha bla jq */ 
+    float: left; 
+    border: 3px solid #bbb; 
+    cursor: pointer; 
+    -webkit-transition: all .4s ease-in-out; 
+    -moz-transition: all .4s ease-in-out; 
+    -o-transition: all .4s ease-in-out; 
+    transition: all .4s ease-in-out; 
+    opacity: .6; 
+}
+
+/*.gallery .thumbnails img:not(:last-child) {
+    
+    margin-right: .5%; 
+} 3mlnha bla jq */ 
+
+.gallery .thumbnails img:last-child {
+    
+    margin-right: 0 !important; 
+}
+
+
+.gallery .thumbnails img.selected {
+        
+border: 3px solid #ad1f10; 
+opacity: 1;  
+    
+}
+
+/* end gallery */ 
+
+/* start products */ 
+
+.products {
+    
+    width: 800px; 
+    margin: 30px auto; 
+    overflow: hidden; 
+}
+
+.products  .product {
+    
+    width: 49%; 
+    float: left; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.products  .product:first-child {
+    
+    margin-right: 1%; 
+}
+
+.products  .product .date {
+    display: block; 
+    color: #888; 
+    font-size: 12px; 
+    margin: 5px 0; 
+}
+
+.products  .product img {
+    
+    width: 100%; 
+    height: 140px; 
+}
+
+.products .product i {
+    
+    display: block; 
+    padding: 10px; 
+    background-color: #eee;
+    margin: 10px 0; 
+    cursor: pointer; 
+}
+
+.products .product .description { 
+    padding: 10px; 
+    display: none; 
+}
+
+/* end products */
+
+
+/* start items */ 
+
+.items {
+    
+    width: 800px; 
+    margin: 30px auto; 
+    overflow: hidden; 
+}
+
+.items .view-options {
+    
+    overflow: hidden; 
+    padding: 10px; 
+}
+
+.items .view-options i {
+    float: right; 
+    cursor: pointer; 
+}
+
+.items .view-options i.active {
+    
+    color: #f54949; 
+}
+
+.items.grid-view  .item {
+    
+    width: 49%; 
+    float: left; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.items.grid-view .item.first {
+    
+    margin-right: 1%; 
+}
+
+.items.grid-view  .item .date {
+    display: block; 
+    color: #888; 
+    font-size: 12px; 
+    margin: 5px 0; 
+}
+
+.items.grid-view .item img {
+    
+    width: 100%; 
+    height: 140px; 
+}
+
+.items.grid-view .item i {
+    
+    display: block; 
+    padding: 10px; 
+    background-color: #eee;
+    margin: 10px 0; 
+    cursor: pointer; 
+}
+
+.items.grid-view .item .description { 
+    padding: 10px; 
+    display: none; 
+}
+
+
+.items.list-view .item { /* list view */ 
+     
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    position: relative; /* 3ashn al img htkon fa wad3a almotlka */
+    height: 112px; 
+    margin-bottom: 10px; 
+}
+
+.items.list-view .item h3 {
+    
+    margin-top: 15px; 
+    margin-left: 110px; 
+}
+
+.items.list-view .item .date {
+    display: block; 
+    color: #888; 
+    font-size: 12px; 
+    margin: 5px 0 5px 110px; 
+}
+
+.items.list-view .item img{
+    position: absolute; 
+    top: 8px; 
+    left: 5px; 
+
+}
+
+.items.list-view .item i {
+ 
+    display: none; 
+}
+
+.items.list-view .item .description { 
+    margin: 0 0 0 110px; 
+}
+
+/* end items */
+
+
+/* start website theme colors */ 
+
+
+[data-choose-color="blue"] .skin-color {  /* ay 3onsra 3ezo color blue adylo al class w ho hy3tmd 3la al data-color */ 
+    
+    color: #3498bd; 
+}
+
+[data-choose-color="blue"] .skin-background {
+    
+    background-color: #3498bd; 
+    color: #fff; 
+}
+
+
+[data-choose-color="red"] .skin-color {  
+    
+    color: #e74c3c; 
+}
+
+[data-choose-color="red"] .skin-background {
+    
+    background-color: #e74c3c; 
+    color: #fff; 
+}
+
+[data-choose-color="green"] .skin-color { 
+    
+    color: #16a085; 
+}
+
+[data-choose-color="green"] .skin-background {
+    
+    background-color: #16a085; 
+    color: #fff; 
+}
+
+[data-choose-color="purple"] .skin-color {  
+    
+    color: #8e44ad; 
+}
+
+[data-choose-color="purple"] .skin-background {
+    
+    background-color: #8e44ad; 
+    color: #fff; 
+}
+
+/* end website theme colors */ 
+
+
+/* start error message */ 
+
+.error-message {
+    
+    padding: 10px; 
+    background-color: rgba(231,76,60,.7);
+    color: #fff; 
+    font-size: 20px; 
+    width: 600px; 
+    text-align: center; 
+    position: fixed; 
+    top: 80px; 
+    right: -600px; 
+    z-index: 9999; 
+}
+
+/* end error message */
+
+/* start our form */
+
+.our-form {
+    
+    width: 800px; 
+    margin: auto; 
+}
+
+
+.our-form form input,
+.our-form form textarea,
+.our-form .custom-file
+{
+    
+    /*display: block; shlnha 3ashn al span tkon gnba al input*/
+    margin-bottom: 20px; 
+    width: 500px; 
+    margin-right: 10px; 
+}
+
+.our-form input[type = "text"], 
+.our-form input[type = "email"],
+.our-form input[type = "password"], 
+.our-form textarea {
+    padding: 10px; 
+    
+    
+}
+
+.our-form textarea {
+    
+    height: 180px; 
+}
+
+.our-form .custom-file  {
+    background-color: #fff; 
+    border: 1px solid rgb(169,169,169);
+    position: relative; /*3ashn al span */ 
+    height: 40px; 
+}
+
+.our-form .custom-file span {
+    display: inline-block;
+    padding: 8px 12px; 
+    
+}
+
+.our-form .custom-file .fa-upload {
+    
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+    z-index: 1; /* 3ashn lma adosa 3lha yft7a al file 3ady */ 
+}
+
+.our-form .custom-file input[type="file"] {
+    
+    opacity: 0;
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 2; /* 3ashn ykon fo2 kol al tnskat w al icon w yft7a */ 
+}
+
+.our-form .the-message {
+    display: none; 
+}
+
+
+.our-form input[type = "submit"] {
+    padding: 15px; 
+    font-size: 16px; 
+}
+
+
+.our-form .tags span {
+    padding: 5px 10px; 
+    background-color: #dedede; 
+    display: inline-block;
+    margin: 10px 10px 10px 0; 
+    border-radius: 8px; 
+    color: #6f6f6f; 
+}
+
+.our-form .tags span i {
+    
+    margin-right: 5px; 
+    color: #969696; 
+    cursor: pointer; 
+}
+
+.our-form .tags span i:hover {
+    color: #000; 
+}
+
+
+/* end our form */ 
+
+/* start trimmed texts  */ 
+.trimmed-texts {
+    margin: auto; 
+    width: 800px; 
+}
+
+.trimmed-texts p {
+    
+    background-color: #ddd; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+/* start trimmed texts */ 
+
+
+
+/* start same height dives */
+
+.container {
+    margin: auto; 
+    width: 800px;
+}
+
+.same-height {
+    
+    overflow: hidden; 
+}
+
+.same-height div {
+    
+    width: 30%; 
+    margin-right: 1%; 
+    float: left; 
+    background-color: #ddd;
+    padding: 10px;
+}
+
+/* end same height dives */ 
+
+
+/* start shuffling cards */ 
+
+.cards {
+    position: relative; /* 3ashn nwz3a al 3nasra aly goha */ 
+    margin-top: 50px; 
+    min-height: 300px; /* mytl3osh bar */ 
+    z-index: 1; /* 3ashn al cards ynzla t7to */ 
+    
+}
+
+.cards .card {
+    width: 150px; 
+    height: 150px; 
+    background-color: #ddd; 
+    border: 5px solid #333; 
+    position: absolute; 
+    left: 50%; /* awsta al cards */
+    margin-left: -75px;/* awsta al cards */
+    cursor: pointer; 
+    
+    
+}
+
+.cards .card-one {
+    background-color: #34495e; 
+}
+
+.cards .card-two {
+    background-color: #8e44ad; 
+}
+.cards .card-three {
+    background-color: #c0392b; 
+}
+.cards .card-four {
+    background-color: #2980b9; 
+}
+.cards .card-five {
+    background-color: #d35400; 
+}
+.cards .card-six {
+    background-color: #27ae60; 
+}
+.cards .card-seven {
+    background-color: #f39c12; 
+}
+.cards .card-eight {
+    background-color: #16a085; 
+}
+
+/* end shuffling cards */ 
+
+/* start blink warning */ 
+
+.blink-warning {
+    
+    background-color: #fff; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 200px; 
+    color: #cc0d0d; 
+    border: 2px solid #10abd4; 
+    text-align: center; 
+}
+/* end blink warning */ 
+
+
+/* start todo list */ 
+
+.todo-list {
+    width: 400px; 
+    margin: 20px auto; 
+    background-color: #fff; 
+    border: 2px solid #fff; 
+}
+
+.todo-list h3 {
+    margin: 0; 
+    padding: 15px; 
+    border-bottom: 2px solid #969696; 
+    background-color: #efefef; 
+}
+
+.tasks {
+    list-style: none; 
+}
+
+.tasks li {
+    
+    padding: 15px 20px; 
+    border-bottom: 1px dashed #ccc; 
+    color: #484848; 
+    cursor:pointer; 
+}
+
+.add-task .task-input {
+    padding: 15px 20px; 
+    border: none; 
+    width: 100%; /* 3ashn al input ymla al div kolha */ 
+}
+
+
+/* end todo list */ 
+
+
+/* start table */ 
+
+.summary {
+    width: 100%; 
+    margin: 40px auto; 
+}
+
+.summary td {
+    background-color: #fff; 
+    padding: 10px; 
+    vertical-align: middle; 
+}
+
+.summary tr:first-child td {
+    background-color: #444; 
+    color: #fff; 
+}
+
+.summary tr:first-child td:first-child {
+    text-align: center; 
+}
+
+
+/* end table */ 
+
+/* start auto changing notes */ 
+
+.text-ticker {
+    width: 400px; 
+    margin: 20px auto; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+}
+
+.text-ticker h3 {
+    padding: 15px; 
+    margin: 0; 
+    background-color: #eee; 
+}
+
+.text-ticker .ticker-list {
+    list-style: none; 
+}
+
+.text-ticker .ticker-list li {
+    padding: 15px; 
+}
+
+.text-ticker .ticker-list li:not(.active) {
+    
+    display: none; 
+}
+/* end  auto changing notes */ 
+
+/* start dynamic tabs */ 
+
+.tabs-list li {
+    padding: 15px 30px; 
+    background-color: #fff; 
+    display: inline-block; 
+    position: relative; 
+    top: 1px; 
+    cursor: pointer; 
+    border: 1px solid #ccc; 
+}
+
+.tabs-list .active,
+.tabs-list li:hover {
+    color: #080; 
+}
+
+.tabs-list .active {
+    
+    border-bottom: 1px solid #fff; 
+    z-index: 2; 
+}
+
+.content-list {
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    position: relative; 
+}
+
+
+.content-list > div{
+    padding: 20px;
+    min-height: 200px;
+}
+
+.content-list > div:not(:first-child) {
+  display: none; 
+}
+
+
+
+.switch-tabs {
+    
+    padding: 10px; 
+    background-color: #efefef; 
+    border: 1px solid #ccc; 
+    display: inline-block; 
+    margin: 20px; 
+    cursor: pointer; 
+}
+
+.left-tabs {
+    overflow: hidden; /* 3ashn aly gwo kol hyb2 floot left */ 
+}
+
+.left-tabs .tabs-list , 
+.left-tabs .content-list {
+    float: left; 
+}
+
+.left-tabs .tabs-list li {
+    display: block; 
+    top: 0; 
+    left: 1px; 
+}
+
+.left-tabs .tabs-list .active{
+    
+    border-bottom: 1px solid #ccc; 
+    border-right: 1px solid #fff; 
+}
+
+.left-tabs .content-list{
+    min-height: 300px; 
+    width: calc(100% - 103px); 
+}
+/* end dynmaic tabs */ 
+
+/* start email suggest box */ 
+
+.email-suggest {
+    
+    margin: 20px 0 0; 
+    padding: 10px; 
+    width: 320px; 
+    border: 1px solid #ccc;
+}
+
+.suggest-box {
+    margin: 15px 0 0; 
+    width: 320px; 
+    background-color: #fdfdfd; 
+    position: relative; 
+    border: 1px solid #e8e8e8; 
+    line-height: 1.8; 
+    color: #888; 
+}
+
+.suggest-box:before {
+    content: ''; 
+    position: absolute; 
+    left: 10px; 
+    top: -20px; 
+    border-style: solid; 
+    border-width: 10px; 
+    border-color: transparent transparent #fdfdfd; 
+}
+
+.suggest-box li {
+    padding: 10px; 
+    border: 1px dashed #ececec; 
+    cursor: pointer
+}
+
+.suggest-box li:hover {
+    
+    background-color: #ddd; 
+}
+/* end email suggest box */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

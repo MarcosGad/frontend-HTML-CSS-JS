@@ -1,0 +1,54 @@
+body {
+    
+    background-color: #ddd; 
+}
+
+.slider {
+    
+    width: 300px; 
+    margin: auto; 
+    overflow: hidden; /* 3ashn mafsha 7ga t5rog 3n 300px */
+}
+
+.slider ul {
+    
+    padding: 0; 
+    list-style: none; 
+    width: 1500px; 
+    position: relative; /* 3ashn al 7rkat fa @keyframes */ 
+    animation: sliding 10s ease-in-out infinite; 
+}
+
+.slider ul li {
+    
+    float: left; 
+    position: relative;
+}
+
+.slider h5 {
+    
+    background-color: #333;
+    padding: 15px;
+    text-align: left;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    margin: 0; 
+    color: #fff; 
+}
+
+@keyframes sliding {
+    
+    5%,10% {left: 0}
+    15%,30% {left: -300px}
+    35%,50%{left: -600px}
+    55%,70%{left: -900px}
+    75%,90%{left: -1200px}
+
+    
+}
+
+.slider ul:hover {
+    
+    animation-play-state: paused; 
+}

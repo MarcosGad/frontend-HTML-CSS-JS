@@ -1,0 +1,33 @@
+body{
+    font: 1em; 
+    background-color: #f0f0ee; 
+}
+
+.parent .child img {
+    width: 80px; 
+    float: left; 
+    border: 1px solid #fff; 
+    border-radius: 10%; 
+}
+
+.parent .child .child-content {
+    float: left; 
+    margin-left: 20px; 
+    width: 400px; 
+    padding: 0 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    position: relative; 
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2); 
+}
+
+.parent .child .child-content .arrow {
+    width: 0px; 
+    height: 0px; 
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #fff; 
+    position: absolute; /* 3ashn a7rka al arrow */ 
+    top:12px; 
+    left:-12px; 
+}

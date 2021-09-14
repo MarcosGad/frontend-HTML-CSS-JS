@@ -1,0 +1,46 @@
+body {
+    
+    background-color: #333; 
+}
+
+.hover-box {
+    
+    width: 600px; 
+    height: 400px;
+    border: 2px solid #fff;
+    margin: 30px auto; 
+    position: relative; 
+    overflow: hidden; /* 3ashn ya5fa al 7gat aly btatl3 barh */ 
+}
+
+img {
+     transition: .4s; 
+}
+
+h3 {
+    
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    margin: 0; 
+    color: #fff; 
+    background-color: #333; 
+    padding: 5px 8px;
+    font-family: Tahoma, Arial; 
+    font-weight: normal; 
+    border-top: 2px solid;
+    border-right: 2px solid; 
+    transform: translate(0,100%); 
+    transition: .4s; 
+}
+
+.hover-box:hover h3 {
+    
+transform: translate(0,0); /* al 3onsar yarg3a lmkno */ 
+    
+}
+
+.hover-box:hover img {
+    
+    opacity: .2; 
+}

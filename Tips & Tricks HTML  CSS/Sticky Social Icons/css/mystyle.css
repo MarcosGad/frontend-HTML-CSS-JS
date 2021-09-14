@@ -1,0 +1,41 @@
+* {
+    
+    margin: 0; 
+    height: 1000px; 
+}
+
+.icons {
+    
+    width: 80px; 
+    height: auto; 
+    /*background-color: #000;*/
+    position: fixed; 
+    top: 50%; 
+    transform: translateY(-50%); /* al div fa al center bzbta */ 
+}
+
+a {
+    
+    display: block; 
+    width: 40px; 
+    height: 40px; 
+    text-align: center; 
+    line-height: 40px; /* center */ 
+    color: #fff;
+}
+
+a:first-child {
+    
+    background-color: #3b5999; 
+}
+
+a:nth-of-type(2) {
+    
+    background-color: #55acee; 
+
+}
+
+a:last-child {
+    
+    background-color: #cd201f;
+}

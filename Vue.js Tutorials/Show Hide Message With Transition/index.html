@@ -1,0 +1,28 @@
+<!--
+  https://vuejs.org/v2/guide/transitions.html
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+      <div id="elzero-app" class="container">
+         <button @click="message = !message">{{ message ? 'Hide Message' : 'Show Message' }}</button>
+         <transition name="slide-fade">
+            <div class="the-message" v-if="message">This is an alert!</div>
+         </transition>
+      </div> 
+      <script src="js/vue.js"></script>
+      <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+             message: false
+            }
+        }); 
+      </script>
+  </body>
+</html>

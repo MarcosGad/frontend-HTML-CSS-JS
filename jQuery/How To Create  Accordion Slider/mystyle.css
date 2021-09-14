@@ -1,0 +1,43 @@
+* {
+    
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; 
+    
+}
+
+section {
+    
+    margin: 20px auto; 
+    width: 940px;
+    text-align: center; 
+    font-weight: bold; 
+
+}
+
+.item {
+    
+    width: 10%; 
+    float: left; 
+    background-color: #EEE; 
+    height: 200px; 
+    line-height: 200px; /* 3ashn al kalm tagy f al nos */ 
+    cursor: pointer; 
+    border-right: 1px solid #FFF; 
+}
+
+.info {
+    
+    width: 40%; 
+    float: left; 
+    background-color: #DDD; 
+    height: 200px; 
+    width: 0;  /* ll25fa2 */ 
+    display: none; /* ll25fa2 */ 
+    
+}
+
+
+

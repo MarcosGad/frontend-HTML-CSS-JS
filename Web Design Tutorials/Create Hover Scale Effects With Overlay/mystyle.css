@@ -1,0 +1,51 @@
+div {
+    
+    width: 200px; 
+    height: 200px; 
+    background-color: #EEE; 
+    padding: 10px;
+    position: relative; /* 3ashn al overlay hyb2a f al wd3a al motlka */
+    color: #FFF; 
+    margin: 20px auto; 
+}
+
+div:before {
+    content: ''; 
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top:0;
+    left: 0; 
+    background-color: rgba(0, 0, 0, .4); 
+    -webkit-transform: scale(0); /* 3ashn a5fa al overlay */ 
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    
+    z-index: 1; 
+}
+
+div:hover:before {
+    
+    -webkit-transform: scale(1); /* 3ashn azhra al overlay */ 
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    
+}
+
+div span {
+    
+    position: relative; 
+    z-index: 2; 
+}
+
+
+
+
+

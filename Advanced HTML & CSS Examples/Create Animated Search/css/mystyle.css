@@ -1,0 +1,21 @@
+input[type="search"] {
+    
+    width: 150px; 
+    height: 40px; 
+    font-size: 20px;
+    /*background-image: url(../images/header-search.png); 
+    background-repeat: no-repeat; 
+    background-position: 10px 10px; */
+    padding: 0 0 0 35px; 
+    border: 2px solid #ccc; 
+    transition: width 1s; 
+    outline: 0; 
+}
+
+input[type="search"]:focus {
+    
+    width: 100%; 
+    border: 0; 
+    border-bottom: 2px solid #ccc; 
+    border-left: 2px solid #ccc; 
+}

@@ -1,0 +1,449 @@
+/*********************** style of all ****************************************/
+.section-pd {
+    
+    padding: 50px 0; 
+}
+
+.wp-title {
+    
+    margin-bottom: 15px; 
+}
+
+@media (max-width : 575px){
+    
+    .wp-title {
+        
+        font-size: 25px; 
+    } 
+}
+
+
+/*********************** top header ****************************************/
+
+.top-header {
+    
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 0; 
+}
+
+.top-header .container { /* al container al 2ba al 5as byhom ekon gnb b3d*/
+     display: flex; 
+     justify-content: space-between; /* msfat ban al diven */ 
+}
+
+@media (max-width : 575px) {
+    .top-header .container {
+        
+        display: block; 
+    }
+    
+}
+
+.top-header span {
+    
+    padding-right: 20px; 
+}
+
+@media (max-width : 575px) {
+    
+    .top-header .info span ,  .top-header .info svg {
+        
+        display: block; 
+    }
+    
+}
+/*********************** navbar ****************************************/
+
+.navbar .navbar-brand {
+    
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
+
+.navbar .navbar-collapse .form-inline button {
+    
+    border-radius: 20px; 
+    width: 100px; 
+
+}
+
+.navbar .navbar-collapse .nav-item {
+    
+    padding-right: 25px; 
+}
+
+/************************* home ****************************************/
+
+.home {
+    
+    background-color: #4ca368; 
+    color: #fff; 
+}
+
+
+
+.home .home-desc {
+    
+    color: #f9f9f9; 
+}
+
+.home .home-img {
+    
+    width: 40%; 
+    margin-bottom: 25px; 
+}
+
+.home form {
+    
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 15px; 
+}
+
+.home form input[type=text] {
+    
+    border: 1px solid #37804e; 
+}
+
+.home form input[type=submit] {
+    
+    background-color: #37804e; 
+    color: #fff; 
+    border: 0; 
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+}
+
+
+/*********************** signup *************************************/
+
+.signup {
+    
+    background-color: #ececec; 
+}
+
+.signup .sign {
+    
+    width: 60%; 
+    margin: auto; 
+    background-color: #fff; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+@media (max-width : 575px){
+    
+    .signup .sign {
+        
+        width: 100%; 
+        
+    }
+}
+
+.signup .sign .arrows span {
+    
+    display: block; 
+    color: gray; 
+}
+
+.signup .sign .sign-info {
+    
+    display: flex; 
+    justify-content: center; 
+}
+
+.signup .sign .sign-info p.icon {
+    
+    font-size: 30px; 
+}
+
+.signup .sign .sign-info p.icon svg {
+    
+    color: #37804e; 
+}
+
+.signup .sign .sign-info > div h4 {
+    
+    color: #37804e; 
+}
+
+.signup .signup-icons {
+    
+    width: 60%; 
+    margin: 20px auto; 
+}
+.signup .signup-icons p.icon {
+    
+    font-size: 12px; 
+    width: 50px; 
+    height: 50px;
+    line-height: 50px; 
+    text-align: center; 
+    margin: auto; 
+    background-color: #37804e; 
+    border-radius: 50%; 
+}
+
+.signup .signup-icons svg {
+    
+    color: #fff; 
+}
+
+
+/*********************** services *************************************/
+
+.services {
+    
+    
+}
+
+.services .or {
+    
+    width: 30%; 
+    margin: auto; 
+    /*background-color: #ccc; */
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    border: 1px solid #000; 
+    border-radius: 10px; 
+}
+
+@media (min-width:576px) and (max-width:769px) {
+    
+    .services .or {
+        
+        width: 80%; 
+    }
+}
+
+@media (max-width : 575px) {
+    
+    .services .or {
+        
+        width: 100%; 
+    }
+}
+.services .or span {
+    
+    padding: 10px; 
+    color: #fff; 
+}
+.services .or span:first-child {
+    
+    display: block;
+    background-color: #5db442; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    width: 50%; 
+}
+
+.services .or span:nth-child(2) {
+    
+    position: absolute; 
+    background-color: #4ca368; 
+    color: #000; 
+    left: 50%; 
+    transform: translatex(-50%); 
+    border-radius: 50%; 
+    text-transform: uppercase; 
+    
+}
+
+.services .or span:last-child {
+    background-color: #fff; 
+    color: #000; 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.services .services-item {
+    
+    margin-top: 30px; 
+}
+
+.services .services-item .item {
+    
+    border: 1px solid #ccc;
+    padding: 20px; 
+    position: relative; 
+}
+
+.services .services-item .item:before {
+    
+    content: ""; 
+    position: absolute; 
+    width: 20%; 
+    height: 1px; 
+    background-color: #ccc; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.services .services-item .item .price {
+    
+    width: 100px; 
+    height: 100px; 
+    margin: 10px auto; 
+    background-color: #fff; 
+    border: 1px solid #4ca368; 
+    padding: 18px 0; 
+    border-radius: 50%; 
+}
+
+.services .services-item .item .price + hr {
+    
+    position: absolute; 
+    top: 29%; 
+    left: 0; 
+    z-index: -1; 
+    width: 100%; 
+    
+}
+
+.services .services-item .item .price span {
+    
+    display: block; 
+}
+
+.services .services-item .item .price span:first-child {
+    
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+.services .services-item .item .price span:last-child {
+    
+    font-size: 14px; 
+    color: #888; 
+}
+
+.services .services-item .item ul li {
+    
+    padding: 5px 0; 
+    
+}
+
+.services .services-item .item ul li:before {
+    
+    content: "\f00c"; 
+    font-family: "FontAwesome"; 
+    color: #37804e; 
+    padding-right: 5px; 
+}
+
+.services .services-item .item button {
+    
+    background-color: #37804e;
+    color: #fff; 
+    cursor: pointer; 
+}
+
+
+
+/************************************ data *******************************************/
+
+.data {
+    
+    background-color: #ececec; 
+}
+.data .data-items {
+    margin-top: 50px; 
+    
+}
+
+.data .data-items .item {
+    
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    padding: 20px 5px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.data .data-items .item svg {
+    
+    color: #37804e;
+    font-size: 25px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.data .data-items .item hr {
+    
+    width: 100px; 
+    margin: 10px auto; 
+}
+
+.data .data-items .item .item-title {
+    
+    text-transform: uppercase; 
+    color: #666; 
+    transition: all 0.3s ease-in-out;
+}
+
+.data .data-items .item p {
+    
+    color: gray; 
+    transition: all 0.3s ease-in-out;
+}
+
+.data .data-items .item:hover {
+    
+    background-color: #5db442; 
+}
+
+
+.data .data-items .item:hover svg ,
+.data .data-items .item:hover .item-title ,
+.data .data-items .item:hover p {
+    
+    color: #fff;
+}
+
+
+/************************************ footer *******************************************/
+
+footer {
+    
+    background-color: #efefef; 
+}
+
+@media (max-width : 575px){
+    
+    footer {
+        
+    } 
+}
+
+footer form {
+    
+    display: flex; 
+}
+
+footer form input[type="text"] {
+    
+    border: 0; 
+}
+
+footer form input[type="submit"] {
+    
+    background-color: #4ca368;
+    color: #fff; 
+    border: 0; 
+    padding: 0 10px; 
+}
+
+footer .copyright {
+    
+    display: flex; 
+    justify-content: space-between; 
+}
+
+footer .copyright h3 , footer .copyright p {
+    
+    margin: 0; 
+}

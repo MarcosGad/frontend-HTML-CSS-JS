@@ -1,0 +1,8 @@
+/*gloobal $*/
+
+$(function(){
+    
+    'use strict'; 
+    
+}); 
+

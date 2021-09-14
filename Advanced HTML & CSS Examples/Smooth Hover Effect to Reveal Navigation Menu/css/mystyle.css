@@ -1,0 +1,57 @@
+body {
+    
+    background-color: #ff5964; 
+    text-transform: uppercase; 
+    font-family: 'Iucida Sans'; 
+    overflow: hidden; 
+    /*perspective: 800px; /* 3ashn almonzar */ 
+}
+
+.layer {
+    
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transform:perspective(800px) scale(1) rotateY(0); 
+    transition: transform .3s; 
+}
+
+nav ul{
+    
+    padding-left: 66%; 
+    font-size: large; /* font akbra mn al 2ba bdrga wa7da */ 
+    line-height: 2; 
+}
+
+nav ul li {
+    
+    list-style: none; 
+}
+
+nav ul li a {
+    
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.show {
+    
+    background-color: #fffbc1;
+}
+
+h1 {
+    
+    font-size: 40px; 
+    text-align: center; 
+}
+
+body:hover .show {
+    
+    transform: perspective(800px) scale(.5) rotateY(25deg); 
+    
+}

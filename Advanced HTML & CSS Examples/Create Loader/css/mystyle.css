@@ -1,0 +1,19 @@
+.loadeing {
+    
+    width: 100px; 
+    height: 100px; 
+    margin: 20px auto; 
+    border: 20px solid #dadada; 
+    border-radius: 50%; 
+    border-top: 20px solid #f50;
+    /*border-right: 20px solid #080; */
+    animation: move 2s ease-in-out infinite; 
+}
+
+@keyframes move {
+    
+    0%{transform: rotate(0)}
+    
+    100%{transform: rotate(360deg)}
+
+}

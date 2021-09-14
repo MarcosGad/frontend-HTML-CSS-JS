@@ -1,0 +1,27 @@
+/* 
+counter counter-reset   counter-increment 
+*/ 
+
+body {
+    counter-reset: section; 
+}
+
+h1:before {
+    
+    counter-increment: section;  /* yzoda wa7da l2na al defoult = zero */ 
+    content: counter(section) ") " ; /* ybd2a ya3da */ 
+}
+
+
+
+h1 {
+    
+    counter-reset: subsection; /* 3ashn a3rfa a3da al p l2ha by3tmd 3la h */ 
+}
+
+p:before {
+    
+    counter-increment: subsection; /* yzoda wa7da l2na al defoult = zero */ 
+    content: counter(section) " . " counter(subsection) ; /* 3dad h1 + 3dad p */ 
+}
+

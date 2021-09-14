@@ -1,0 +1,38 @@
+body {
+    
+    background-color: #000; 
+}
+
+.content {
+    display: inline-block; /* 3ashn al scroll al w 3la ad al m7to aly gwoh*/ 
+    cursor: pointer; 
+    position: relative; 
+    left: 50%; 
+    top: 50px; 
+}
+
+.icon1 , .icon2 , .icon3  {
+    
+    width: 35px; 
+    height: 5px; 
+    background-color: #fff; 
+    margin: 6px 0; 
+    transition: .5s;
+}
+
+.change .icon1 {
+    
+    transform: rotate(-45deg) translate(-9px,6px); 
+}
+
+.change .icon2 {
+    
+    opacity: 0; 
+}
+
+.change .icon3 {
+    
+    transform: rotate(45deg) translate(-8px,-8px);  
+}
+
+

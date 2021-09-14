@@ -1,0 +1,108 @@
+* , *:after , *:before {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0; /* mosklt al margin aly fo2  */
+}
+
+body , html {
+    height: 100%; 
+    overflow: hidden; 
+    margin: 0; 
+}
+
+.container {
+    width: 100%; 
+    height: 100%; 
+    position: relative; /* 3ashn ht7km fa sidebar w use position */ 
+    left: 0; 
+    
+    -webkit-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+}
+
+.container .slidbar {
+    left: -240px; /* 3ashn e5tfa */ 
+    width: 240px; 
+    height: 100%; 
+    position: absolute; 
+    background-color: #DF314D; 
+}
+
+.open-sidebar {
+    left: 240px; 
+}
+
+
+.slidbar ul{
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.slidbar ul li a {
+    padding: 15px 20px; 
+    font-size: 18px; 
+    color: #fff; 
+    text-decoration: none; 
+    display: block; /* 3ashn et2sra bla padding */ 
+    border-bottom: 1px solid #C9223D; 
+    
+    -webkit-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+    
+}
+
+.slidbar ul li:hover a{ /* lma a3mla hover y7sla lla a */ 
+    
+    background-color: #C9223D; 
+}
+
+
+
+.main-content {
+    width: 100%;
+    height: 100%; 
+    padding: 10px; 
+    
+}
+
+.main-content .content {
+    
+    padding-left: 60px; 
+}
+
+.main-content .sidebar-toggle {
+    background-color: #DF314D; 
+    border-radius: 3PX; 
+    padding: 8PX; 
+    float: left; 
+    position: relative; 
+    
+}
+
+.sidebar-toggle .bar {
+    display: block; 
+    width: 15px; 
+    background-color: #fff; 
+    margin-bottom: 3px; 
+    height: 2px; 
+}
+
+.area {
+    position: absolute; 
+    width: 50px; 
+    background-color: #F3F3F3; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+}
+
+
+
+

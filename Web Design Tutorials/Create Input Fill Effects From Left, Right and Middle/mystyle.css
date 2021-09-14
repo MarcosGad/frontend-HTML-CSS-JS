@@ -1,0 +1,40 @@
+form {
+    
+    width: 400px; 
+    margin: auto; 
+}
+
+form input:focus {
+    
+    outline: none; 
+}
+
+form > div {
+    
+    position: relative; /* 3ashn ho al 2ba */
+}
+
+form input {
+    width: 100%; 
+    padding: 10px 0; 
+    border: none; 
+    border-bottom: 1px solid #ccc; 
+}
+
+form input + .border {
+    
+    position: absolute; 
+    bottom: 0; 
+    left: 0;         /* right:0 -> hybd2a mn al yman and left: 50%-> 3ashn yb2a mn al nosa m3 ast5dam al left fa al 2sfla  */ 
+    background-color: #c23616; 
+    height: 2px; 
+    /*width: 100%;*/
+    width: 0; 
+    transition: .4s; /* 3ashn y7ark al border b7rka */ 
+}
+
+form input:focus + .border {
+    
+   /* left: 0; /* 3ashn ybd2a mn al montsfa */
+    width: 100%; 
+}

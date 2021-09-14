@@ -1,0 +1,32 @@
+.our-button {
+    width: 30px; 
+    height: 40px; 
+    display: inline-block; 
+    cursor: pointer; 
+    margin: 20px;  
+}
+
+.our-button .the-bar {
+    
+    width: 100%; 
+    height: 4px; 
+    display: block; 
+    background-color: #888;
+    margin: 0 0 5px; 
+    transition: .5s;
+}
+
+.transforme .the-bar:first-child {
+    transform: rotate(-45deg) translate(-6px, 6px); 
+    
+}
+
+.transforme .the-bar:nth-child(2) {
+    
+    opacity: 0; 
+}
+
+.transforme .the-bar:last-child {
+    
+    transform: rotate(45deg) translate(-8px, -8px);
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.container{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+.container textarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.container .counter {
+    display: block;
+    text-align: right;
+    padding-top: 10px;
+}
+.container .counter.zero span {
+    color: red;
+}

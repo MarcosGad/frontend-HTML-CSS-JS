@@ -1,0 +1,18 @@
+div {
+    padding: 10px; 
+    background: #DDD; 
+    width: 300px; 
+    margin: 20px 0; 
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+ul li {
+    display: inline-block; /* gnba b3d f safa wa7d */ 
+    width: 20px; 
+    height: 20px; 
+   
+}

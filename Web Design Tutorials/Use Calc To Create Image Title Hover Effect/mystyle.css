@@ -1,0 +1,55 @@
+body {
+    background-color: #333; 
+    
+}
+
+.image {
+    margin: 20px auto; 
+    width: 400px;
+    height: 250px;
+    position: relative; 
+}
+
+.image img {
+    transition: .4s; 
+}
+
+.image:hover img {
+    opacity:  .1; 
+}
+
+.image .caption {
+    position: absolute; 
+    left: 0; 
+    bottom: 5px; 
+}
+
+.image .caption h3{
+    
+    padding: 10px 15px; 
+    background-color: #00a8ff; 
+    color: #fff;
+    font-size: 16px;
+    position: relative; 
+    z-index: 1; 
+    margin: 0; 
+    font-family: Tahoma, Arial; 
+}
+
+.image .caption:after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    top: -5px; 
+    background-color: #fff;
+    width: 0;  
+    height: calc(100% + 10px);   
+    z-index: 0;
+    transition: .4s;
+}
+
+
+.image:hover .caption:after {
+    
+    width: calc(100% + 5px);
+}

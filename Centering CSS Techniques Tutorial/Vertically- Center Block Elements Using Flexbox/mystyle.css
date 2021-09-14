@@ -1,0 +1,19 @@
+/* 2- (block) -> */
+
+div {
+    width: 200px; 
+    height: 250px; 
+    color: #fff; 
+    background-color: #000;
+    
+    display: flex; 
+    flex-direction: column; /* row lo 3ezoh awfkina */ 
+    justify-content: center; 
+}
+
+div p {
+    background-color: #00f; 
+    padding: 10px; 
+    height: 50px;
+    width: 100px; 
+}

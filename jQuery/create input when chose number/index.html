@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="last">
+    <head>
+    <meta charset="utf-8">
+    <title>learn javascript</title>
+    <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <form>
+         <div id="text">Choose No.of TextBoxes:
+    <select id="options">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br/>
+</div>
+</form>
+        
+        
+
+        
+        
+        
+        
+        
+<script src="jquery-3.2.1.min.js"></script>
+        
+        
+<script>
+$("select").change(function () {
+    $(this).siblings("input").remove();
+    for (i = 0; i < this.value; i++) {
+        $("<input/>", {
+            type: text,
+            id: "textbox" + i
+            //you add more attributes here if you want
+        }).appendTo("#text");
+    }
+});
+</script>
+        
+        
+        
+        <script src="myjq.js"></script>
+    </body>
+</html>

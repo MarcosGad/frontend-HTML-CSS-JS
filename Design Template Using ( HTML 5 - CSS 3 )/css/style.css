@@ -1,0 +1,501 @@
+*, *:after, *:before {
+    
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.container {
+    
+    width: 1100px;
+    margin: auto; 
+}
+
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix {
+    clear: both; 
+    
+}
+
+p,span {
+        font-family: 'Raleway', sans-serif;
+}
+
+/********** header *************/
+section.header {
+    
+    height: 650px; 
+    background-image: url(../images/Backgrounds-For-Best-Abstract-Art-Wallpaper-Hd-Pics-Pc.jpg);
+    background-size: cover; 
+}
+
+section.header .header-head {
+    
+    padding-top: 10px;
+}
+
+section.header .header-head img {
+    
+    float: left; 
+}
+
+section.header .header-head nav {
+    
+    float: right; 
+}
+
+section.header .header-head nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+section.header .header-head nav ul li a{
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+section.header .header-content {
+    
+    width: 700px; 
+    margin: auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    text-align: center; 
+}
+
+section.header .header-content  h2 {
+    
+    font-size: 50px; 
+    font-weight: bold; 
+    color: #fff; 
+    margin-bottom: 2%; 
+
+}
+
+section.header .header-content p {
+    font-size: 20px; 
+    color: #fff;    
+    margin-bottom: 2%; 
+}
+
+section.header .header-content button {
+    width: 180px;
+    border: 0; 
+    outline: 0; 
+    padding: 20px;
+    font-size: 15px; 
+    margin-left: 3%; 
+    border-radius: 10px;
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: all 0.5s ease-in-out; 
+}
+
+section.header .header-content button:first-child {
+    
+    background-color: #fff; 
+    color: #000; 
+}
+
+section.header .header-content button:last-child {
+    
+    background-color: #8be2e5; 
+    color: #fff; 
+    
+}
+
+section.header .header-content button:last-child:hover {
+    
+    background-color: #f50; 
+    
+}
+
+section.header .header-footer {
+    
+    width: 30px; 
+    height: 53px;
+    position: absolute; 
+    bottom: 20%;
+    left: 50%; 
+    border: 2px solid #000; 
+    border-radius: 18px;
+}
+
+section.header .header-footer .scroll {
+    
+    width: 5px; 
+    height: 10px; 
+    margin: auto; 
+    background-color: #000; 
+    position: relative; 
+    top: 4px; 
+    animation: scrolling 1s ease-in-out infinite;  
+}
+
+@keyframes scrolling {
+    
+    0%{
+        opacity: 0; 
+        top: 5px; 
+    }
+    
+    30% {
+        opacity: 1; 
+        top: 10px; 
+    }
+    
+    100%{
+        
+        opacity: 0; 
+        top: 25px; 
+    }
+}
+
+
+/****************** be the first ******************/ 
+
+section.befirst {
+    
+    height: 600px; 
+    background-color: #22358f; 
+    padding-top: 10%; 
+    text-align: center;
+    /*background-attachment: fixed;*/ 
+    margin-bottom: 11%; 
+}
+
+section.befirst .befirst-center h2 {
+    
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 40px; 
+}
+
+section.befirst .befirst-center p {
+    
+    color: #fff; 
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+    font-size: 25px; 
+}
+
+section.befirst .befirst-img {
+    
+    text-align: center; 
+}
+
+section.befirst .befirst-img img {
+    
+    width: 500px;
+    height: 450px;
+}
+
+/*********************** feature *************************/
+
+section.feature {
+    
+    padding-bottom: 20%; 
+}
+
+section.feature .feature-feat {
+    
+    width: 30%; 
+    float: left; 
+    margin-left: 5%; 
+}
+
+section.feature .feature-feat:nth-of-type(1) {
+  
+    margin-left: 0; /* 3ashn altalt div bganb b3da */ 
+}
+
+section.feature .feature-feat:nth-of-type(1) hr {
+    
+    height: 5px; 
+    background-color: #6d3f96; 
+    border: 0; 
+}
+
+section.feature .feature-feat:nth-of-type(2) hr {
+    
+    height: 5px; 
+    background-color: #70cbce; 
+    border: 0; 
+}
+
+section.feature .feature-feat:nth-of-type(3) hr {
+    
+    height: 5px; 
+    background-color: #fdc05d; 
+    border: 0; 
+}
+
+section.feature .feature-feat h2 {
+    
+    font-size: 18px; 
+    margin-top: 5%; 
+}
+
+section.feature .feature-feat p {
+    
+    color: #929496; 
+    line-height: 1.3; 
+    margin-top: 5%; 
+    
+}
+
+
+/****************** pricing *********************/
+
+section.pricing {
+    
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+    background-color: #70cbce;
+    height: auto; /* bya5od al pading mn al top */ 
+    text-align: center; 
+    
+}
+
+section.pricing h2 {
+    color: #fff; 
+    font-size: 45px;
+    margin-bottom: 2%; 
+}
+
+section.pricing p {
+    
+    font-size: 18px; 
+    color: #fff; 
+    margin-bottom: 3%; 
+}
+
+section.pricing .pricing-flex {
+    
+    display: flex; 
+    width: 100%; 
+    justify-content: center; /* a5la al 3 div f montsfa al ab */ 
+}
+
+section.pricing .pricing-flex .flex-item {
+    
+    width: 32%; 
+    
+}
+
+section.pricing .pricing-flex .flex-item:nth-of-type(1), 
+section.pricing .pricing-flex .flex-item:nth-of-type(3) {
+    
+    margin-top: 2%;
+}
+
+
+section.pricing .pricing-flex .flex-item ul {
+    
+    list-style: none; 
+    background-color: #fff; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+section.pricing .pricing-flex .flex-item ul:hover {
+    
+    margin-top: -10px; 
+    
+}
+
+section.pricing .pricing-flex .flex-item ul:hover li.doller {
+    
+    background-color: #333; 
+}
+
+section.pricing .pricing-flex .flex-item ul li.price {
+    
+    background-color: #231f20; 
+    color: #fff; 
+    padding: 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+} 
+
+section.pricing .pricing-flex .flex-item ul li.doller {
+    
+    background-color: #231f20; 
+    color: #fff; 
+    font-size: 30px; 
+    font-weight: bold; 
+    padding: 15px; 
+    transition: all 0.5s ease-in-out; 
+    
+}
+
+section.pricing .pricing-flex .flex-item ul li.doller small {
+    
+    font-weight: normal; 
+    color: #929496; 
+}
+
+
+
+section.pricing .pricing-flex .flex-item ul li.list {
+    
+    padding: 20px; 
+    border-bottom: 1px dotted #e8eaea;
+    font-weight: bold; 
+    
+}
+
+section.pricing .pricing-flex .flex-item ul li.content {
+    
+    color: #929496; 
+    padding: 20px; 
+    font-size: 13px; 
+    font-weight: normal; /* b3da al bold 3ashn ytnfzaa */
+}
+
+section.pricing .pricing-flex .flex-item ul li.btn {
+    
+    padding: 15px;
+    color: #70cbce;
+    text-transform: uppercase; 
+    cursor: pointer; 
+}
+
+section.pricing .pricing-flex .flex-item ul li.btn:hover {
+    
+    background-color: #f5f5f5; 
+}
+
+
+
+/**************** invite *********************************/
+
+section.invite {
+    height: auto; 
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+    background-color: #f5f5f5; 
+    text-align: center; 
+}
+
+section.invite i {
+    
+    color: #70cbce; 
+    border: 2px solid #70cbce; 
+    border-radius: 30px; 
+    padding: 20px; 
+    margin-bottom: 2%; 
+}
+
+section.invite h2 {
+    
+    font-size: 40px; 
+    margin-bottom: 2%; 
+}
+
+section.invite p {
+    
+    margin-bottom: 2%; 
+}
+
+section.invite input {
+    
+    display: block; 
+    width: 300px; 
+    margin: auto; 
+    height: 50px; 
+    border: 0; 
+    outline: 0; 
+    padding: 10px; 
+    margin-bottom: 2%; 
+    border-radius: 10px; 
+}
+
+section.invite input::-webkit-input-placeholder {
+    
+    color: #aaa;
+    
+}
+
+section.invite button {
+    
+    width: 200px; 
+    height: 50px; 
+    background-color: #70cbce; 
+    padding: 10px;
+    border: 0; 
+    outline: 0; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    color: #fff; 
+}
+
+
+/******************* info ******************************/
+
+section.info {
+    
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+    
+}
+
+section.info .info-desc {
+    
+    width: 70%; 
+    margin: auto; 
+}
+
+section.info .info-desc .info-img {
+    
+    width: 20%; 
+    float: left;
+}
+
+section.info .info-desc .info-information {
+    
+    width: 80%; 
+    float: left; 
+} 
+
+section.info hr {
+    
+    height: 2px;
+    border: 0; 
+    background-color: #e8eaea; 
+}
+
+/***************** footer ****************/
+
+section.footer {
+    padding-bottom: 5%; 
+}
+
+.footer div.left {
+    
+    float: left; 
+}
+
+.footer div.left span {
+    
+    padding-right: 10px; 
+}
+
+.footer div.right {
+    
+    float: right; 
+}
+
+.footer div.right span {
+    
+    color: #ccc; 
+}
